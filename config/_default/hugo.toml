@@ -1,0 +1,35 @@
+baseURL = "https://huntcon.github.io/"
+locale = "en"
+title = "HUNTCON 2027"
+theme = "blowfish"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  colorScheme = "blowfish"
+  defaultAppearance = "dark"
+  autoSwitchAppearance = false
+
+[params.homepage]
+  layout = "custom"
+  showRecent = false
+
+[params.article]
+  showDate = false
+  showAuthor = false
+  showBreadcrumbs = false
+  showPagination = false
+  showReadingTime = false
+
+[params.header]
+  layout = "basic"
+
+[params.footer]
+  showCopyright = true
+  showThemeAttribution = false
+
+[params.list]
+  showBreadcrumbs = false

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 1600 1600" role="img" aria-labelledby="title desc">
+  <title id="title">HUNTCON 2027 Threat Hunting Conference logo</title>
+  <desc id="desc">Transparent-background vector logo with black mountain range, pine tree line, red targeting reticle, HUNTCON wordmark, 2027 year mark, and Threat Hunting Conference tagline.</desc>
+
+  <defs>
+    <style><![CDATA[
+      .black { fill: #050505; }
+      .red { fill: none; stroke: #c91515; stroke-width: 34; stroke-linecap: round; stroke-linejoin: round; }
+      .red-fill { fill: #c91515; }
+      .white { fill: #ffffff; }
+      .wordmark { font-family: 'Arial Black', 'Impact', 'Montserrat ExtraBold', sans-serif; font-weight: 900; letter-spacing: 18px; }
+      .year { font-family: 'Arial Black', 'Impact', 'Montserrat ExtraBold', sans-serif; font-weight: 900; letter-spacing: 26px; }
+      .tagline { font-family: 'Arial', 'Montserrat', sans-serif; font-weight: 800; letter-spacing: 18px; }
+    ]]></style>
+
+    <g id="pine">
+      <path class="black" d="M0,-78 L-28,-26 L-12,-28 L-40,20 L-20,18 L-48,72 L48,72 L20,18 L40,20 L12,-28 L28,-26 Z"/>
+      <rect class="black" x="-7" y="62" width="14" height="26" rx="2"/>
+    </g>
+  </defs>
+
+  <!-- No background rectangle: SVG canvas is intentionally transparent. -->
+
+  <!-- Mountain range -->
+  <g transform="translate(0,20)">
+    <path class="black" d="M150 650 L300 500 L370 570 L520 370 L610 455 L800 160 L1000 535 L1130 415 L1450 700 L1305 665 L1145 510 L1030 640 L960 560 L800 265 L625 610 L545 515 L420 680 L350 590 L225 695 Z"/>
+    <path class="white" opacity="0.98" d="M800 205 L865 365 L817 325 L760 425 L790 300 L730 360 Z"/>
+    <path class="white" opacity="0.98" d="M300 520 L350 590 L316 575 L270 635 Z"/>
+    <path class="white" opacity="0.98" d="M1130 435 L1230 585 L1168 555 L1100 645 Z"/>
+    <path class="white" opacity="0.98" d="M520 395 L590 470 L535 450 L488 585 Z"/>
+  </g>
+
+  <!-- Forest line -->
+  <g transform="translate(0,0)">
+    <rect class="black" x="130" y="760" width="1340" height="22" rx="8"/>
+    <g transform="translate(0,705) scale(0.82)">
+      <use href="#pine" x="130" y="50"/><use href="#pine" x="180" y="45"/><use href="#pine" x="235" y="58"/>
+      <use href="#pine" x="295" y="35"/><use href="#pine" x="350" y="65"/><use href="#pine" x="420" y="55"/>
+      <use href="#pine" x="485" y="42"/><use href="#pine" x="550" y="62"/><use href="#pine" x="615" y="48"/>
+      <use href="#pine" x="675" y="68"/><use href="#pine" x="735" y="53"/><use href="#pine" x="1070" y="52"/>
+      <use href="#pine" x="1130" y="68"/><use href="#pine" x="1190" y="45"/><use href="#pine" x="1250" y="58"/>
+      <use href="#pine" x="1318" y="38"/><use href="#pine" x="1380" y="63"/><use href="#pine" x="1450" y="47"/>
+      <use href="#pine" x="1510" y="58"/><use href="#pine" x="1572" y="42"/><use href="#pine" x="1628" y="66"/>
+    </g>
+  </g>
+
+  <!-- Target / reticle -->
+  <g transform="translate(800,690)">
+    <circle cx="0" cy="0" r="145" fill="none" stroke="#c91515" stroke-width="28"/>
+    <circle cx="0" cy="0" r="84" fill="none" stroke="#ffffff" stroke-width="16" opacity="0.95"/>
+    <circle cx="0" cy="0" r="28" fill="#ffffff"/>
+    <circle cx="0" cy="0" r="10" class="red-fill"/>
+    <path class="red" d="M0 -222 L0 -155"/>
+    <path class="red" d="M0 155 L0 222"/>
+    <path class="red" d="M-222 0 L-155 0"/>
+    <path class="red" d="M155 0 L222 0"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="800" y="1050" text-anchor="middle" class="black wordmark" font-size="174">HUNTCON</text>
+
+  <!-- Year with thin side lines -->
+  <g transform="translate(0,0)">
+    <path d="M160 1165 H460" stroke="#c91515" stroke-width="10" stroke-linecap="round"/>
+    <path d="M1140 1165 H1440" stroke="#c91515" stroke-width="10" stroke-linecap="round"/>
+    <text x="800" y="1225" text-anchor="middle" class="red-fill year" font-size="150">2027</text>
+  </g>
+
+  <!-- Tagline -->
+  <text x="800" y="1365" text-anchor="middle" class="black tagline" font-size="54">THREAT HUNTING CONFERENCE</text>
+</svg>

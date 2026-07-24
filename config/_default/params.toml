@@ -1,0 +1,30 @@
+colorScheme = "blowfish"
+defaultAppearance = "dark"
+autoSwitchAppearance = false
+enableSearch = false
+enableCodeCopy = false
+defaultBackgroundImage = "img/background.svg"
+
+[homepage]
+  layout = "custom"
+  homepageImage = "img/background.svg"
+  showRecent = false
+
+[article]
+  showDate = false
+  showAuthor = false
+  showBreadcrumbs = false
+  showPagination = false
+  showReadingTime = false
+  showTableOfContents = false
+  showWordCount = false
+
+[header]
+  layout = "basic"
+
+[footer]
+  showCopyright = true
+  showThemeAttribution = false
+
+[list]
+  showBreadcrumbs = false

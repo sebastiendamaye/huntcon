@@ -1,0 +1,42 @@
+{{ define "main" }}
+<div class="relative">
+  <!-- Background image -->
+  <div class="fixed inset-x-0 top-0 -z-10">
+    {{ $homepageImage := resources.Get .Site.Params.homepage.homepageImage }}
+    {{ if $homepageImage }}
+      <img
+        class="nozoom mt-0 mr-0 mb-0 ml-0 h-[1000px] w-full object-cover"
+        src="{{ $homepageImage.RelPermalink }}"
+        role="presentation">
+      <div
+        class="from-neutral absolute inset-0 h-[1000px] bg-gradient-to-t to-transparent mix-blend-normal dark:from-neutral-800"></div>
+      <div
+        class="from-neutral absolute inset-0 h-[1000px] bg-gradient-to-t to-neutral-100 opacity-60 mix-blend-normal dark:from-neutral-800 dark:to-neutral-800"></div>
+    {{ end }}
+  </div>
+
+  <!-- Hero content -->
+  <div class="flex flex-col items-center justify-between h-[calc(100vh-5rem)] text-center px-4 py-4">
+    <img src="/images/logo.svg" alt="HUNTCON 2027 Logo" class="h-[50vh] w-auto object-contain" />
+    <div class="flex flex-col items-center">
+      <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent mb-1">
+        HUNTCON 2027
+      </h1>
+      <p class="text-lg text-neutral-400 mb-1">
+        Threat Hunting Conference
+      </p>
+      <p class="text-base text-neutral-500 mb-4">
+        March 2027 &middot; EDENN, Nanterre, France
+      </p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="/cfp/" class="px-6 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-semibold hover:opacity-90 transition-opacity">
+          Submit a Talk
+        </a>
+        <a href="/registration/" class="px-6 py-3 rounded-lg border border-cyan-500 text-cyan-400 font-semibold hover:bg-cyan-500/10 transition-colors">
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,19 @@
+/* Custom styles for HUNTCON 2027 */
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #06b6d4;
+  box-shadow: 0 0 0 1px #06b6d4;
+}
+
+form input[type="file"] {
+  cursor: pointer;
+}
+
+fieldset {
+  transition: border-color 0.2s;
+}
+
+fieldset:focus-within {
+  border-color: #06b6d4;
+}
