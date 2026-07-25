@@ -6,7 +6,7 @@ layout: "simple"
 
 Register to attend HUNTCON 2027. Participation is free but registration is mandatory.
 
-<form id="registration-form" action="https://formspree.io/f/placeholder" method="POST" class="mt-8 space-y-6 max-w-2xl">
+<form id="registration-form" action="https://script.google.com/macros/s/AKfycbyJ2nz-woupO7Y07qzJvbUyWgjN5PxiTmbw4unMlhpZhHKn5qmlYrgqJ8KhBU4s6vigBg/exec" method="POST" class="mt-8 space-y-6 max-w-2xl">
 
   <div>
     <label for="reg-affiliation" class="block text-sm font-medium mb-1">Affiliation (Company) <span class="text-red-400">*</span></label>
@@ -34,16 +34,17 @@ Register to attend HUNTCON 2027. Participation is free but registration is manda
   </div>
 
   <div>
-    <label class="block text-sm font-medium mb-2">Participation Mode <span class="text-red-400">*</span></label>
+    <label class="block text-sm font-medium mb-2">Want to actively contribute? (optional)</label>
     <div class="space-y-2">
       <label class="flex items-center gap-2 cursor-pointer">
-        <input type="radio" name="mode" value="attendee" required
-          class="text-cyan-500 focus:ring-cyan-500" onchange="toggleTopics()" checked />
-        <span>Attendee only</span>
+        <input type="checkbox" name="role" value="speaker"
+          class="form-checkbox" onchange="toggleRoles()" />
+        <span>Speaker</span>
       </label>
+      <p id="speaker-note" class="hidden text-sm text-neutral-400 ml-6">(Please also use the <a href="/cfp/" class="text-cyan-400 hover:underline">Call for Papers</a> form to submit your presentation)</p>
       <label class="flex items-center gap-2 cursor-pointer">
-        <input type="radio" name="mode" value="round_table" required
-          class="text-cyan-500 focus:ring-cyan-500" onchange="toggleTopics()" />
+        <input type="checkbox" name="role" value="round_table"
+          class="form-checkbox" onchange="toggleRoles()" />
         <span>Participant to a Round Table</span>
       </label>
     </div>
@@ -54,17 +55,17 @@ Register to attend HUNTCON 2027. Participation is free but registration is manda
     <div class="space-y-2">
       <label class="flex items-center gap-2 cursor-pointer">
         <input type="checkbox" name="topics" value="threat_hunting_frameworks"
-          class="text-cyan-500 focus:ring-cyan-500 rounded" />
+          class="form-checkbox" />
         <span>Threat Hunting Frameworks</span>
       </label>
       <label class="flex items-center gap-2 cursor-pointer">
         <input type="checkbox" name="topics" value="ai_threat_hunting"
-          class="text-cyan-500 focus:ring-cyan-500 rounded" />
+          class="form-checkbox" />
         <span>AI Applied to Threat Hunting</span>
       </label>
       <label class="flex items-center gap-2 cursor-pointer">
         <input type="checkbox" name="topics" value="vibe_hunting"
-          class="text-cyan-500 focus:ring-cyan-500 rounded" />
+          class="form-checkbox" />
         <span>Vibe Hunting</span>
       </label>
     </div>
@@ -76,32 +77,64 @@ Register to attend HUNTCON 2027. Participation is free but registration is manda
   </button>
 </form>
 
-<script>
-function toggleTopics() {
-  const mode = document.querySelector('input[name="mode"]:checked').value;
-  const topicsSection = document.getElementById('topics-section');
-  const checkboxes = topicsSection.querySelectorAll('input[type="checkbox"]');
+<div id="registration-success" class="hidden mt-8 p-6 rounded-lg border border-green-500/50 bg-green-500/10 max-w-2xl">
+  <p class="text-green-400 font-semibold text-lg">Registration confirmed!</p>
+  <p class="text-neutral-300 mt-2">Thank you for registering. We look forward to seeing you at HUNTCON 2027.</p>
+</div>
 
-  if (mode === 'round_table') {
+<script>
+function toggleRoles() {
+  const speakerChecked = document.querySelector('input[name="role"][value="speaker"]').checked;
+  const roundTableChecked = document.querySelector('input[name="role"][value="round_table"]').checked;
+  const topicsSection = document.getElementById('topics-section');
+  const topicCheckboxes = topicsSection.querySelectorAll('input[type="checkbox"]');
+  const speakerNote = document.getElementById('speaker-note');
+
+  if (roundTableChecked) {
     topicsSection.classList.remove('hidden');
-    checkboxes.forEach(cb => cb.removeAttribute('disabled'));
+    topicCheckboxes.forEach(cb => cb.removeAttribute('disabled'));
   } else {
     topicsSection.classList.add('hidden');
-    checkboxes.forEach(cb => {
+    topicCheckboxes.forEach(cb => {
       cb.checked = false;
       cb.setAttribute('disabled', 'disabled');
     });
   }
+
+  if (speakerChecked) {
+    speakerNote.classList.remove('hidden');
+  } else {
+    speakerNote.classList.add('hidden');
+  }
 }
 
 document.getElementById('registration-form').addEventListener('submit', function(e) {
-  const mode = document.querySelector('input[name="mode"]:checked').value;
-  if (mode === 'round_table') {
+  e.preventDefault();
+  var form = this;
+
+  const roundTableChecked = document.querySelector('input[name="role"][value="round_table"]').checked;
+  if (roundTableChecked) {
     const checked = document.querySelectorAll('#topics-section input[type="checkbox"]:checked');
     if (checked.length === 0) {
-      e.preventDefault();
       alert('Please select at least one round table topic.');
+      return;
     }
   }
+
+  var button = form.querySelector('button[type="submit"]');
+  button.disabled = true;
+  button.textContent = 'Submitting...';
+
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    mode: 'no-cors',
+  }).then(function() {
+    form.classList.add('hidden');
+    document.getElementById('registration-success').classList.remove('hidden');
+  }).catch(function() {
+    form.classList.add('hidden');
+    document.getElementById('registration-success').classList.remove('hidden');
+  });
 });
 </script>

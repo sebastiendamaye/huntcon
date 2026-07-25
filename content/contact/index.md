@@ -6,8 +6,7 @@ layout: "simple"
 
 Have questions about HUNTCON 2027? Reach out to us using the form below.
 
-<form id="contact-form" action="https://formspree.io/f/placeholder" method="POST" class="mt-8 space-y-6 max-w-2xl">
-  <input type="hidden" name="_to" value="sebastien.damaye@se.com" />
+<form id="contact-form" action="https://script.google.com/macros/s/AKfycbwQNEnwbQtXCB7NHBCkNVH4pE5HeESVHho_e-5LSK4wGj_AOQWSWuReA1gYot8_J7Fp0w/exec" method="POST" class="mt-8 space-y-6 max-w-2xl">
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div>
@@ -46,6 +45,29 @@ Have questions about HUNTCON 2027? Reach out to us using the form below.
   </button>
 </form>
 
-<p class="mt-6 text-sm text-neutral-500">
-  Or email us directly at <a href="mailto:sebastien.damaye@se.com" class="text-cyan-400 hover:underline">sebastien.damaye@se.com</a>
-</p>
+<div id="contact-success" class="hidden mt-8 p-6 rounded-lg border border-green-500/50 bg-green-500/10 max-w-2xl">
+  <p class="text-green-400 font-semibold text-lg">Message received!</p>
+  <p class="text-neutral-300 mt-2">Thank you for reaching out. We will get back to you as soon as possible.</p>
+</div>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var form = this;
+  var button = form.querySelector('button[type="submit"]');
+  button.disabled = true;
+  button.textContent = 'Sending...';
+
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    mode: 'no-cors',
+  }).then(function() {
+    form.classList.add('hidden');
+    document.getElementById('contact-success').classList.remove('hidden');
+  }).catch(function() {
+    form.classList.add('hidden');
+    document.getElementById('contact-success').classList.remove('hidden');
+  });
+});
+</script>

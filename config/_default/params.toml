@@ -3,11 +3,8 @@ defaultAppearance = "dark"
 autoSwitchAppearance = false
 enableSearch = false
 enableCodeCopy = false
-defaultBackgroundImage = "img/background.svg"
-
 [homepage]
   layout = "custom"
-  homepageImage = "img/background.svg"
   showRecent = false
 
 [article]
@@ -25,6 +22,7 @@ defaultBackgroundImage = "img/background.svg"
 [footer]
   showCopyright = true
   showThemeAttribution = false
+  showAppearanceSwitcher = false
 
 [list]
   showBreadcrumbs = false

@@ -3,18 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://huntcon.github.io/cfp/</loc>
+    <loc>http://10.226.35.14:8080/cfp/</loc>
   </url>
   <url>
-    <loc>https://huntcon.github.io/contact/</loc>
+    <loc>http://10.226.35.14:8080/contact/</loc>
   </url>
   <url>
-    <loc>https://huntcon.github.io/</loc>
+    <loc>http://10.226.35.14:8080/</loc>
   </url>
   <url>
-    <loc>https://huntcon.github.io/info/</loc>
+    <loc>http://10.226.35.14:8080/info/</loc>
   </url>
   <url>
-    <loc>https://huntcon.github.io/registration/</loc>
+    <loc>http://10.226.35.14:8080/registration/</loc>
   </url>
 </urlset>

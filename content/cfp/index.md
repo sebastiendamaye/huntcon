@@ -4,9 +4,12 @@ description: "Submit your presentation for HUNTCON 2027"
 layout: "simple"
 ---
 
-We invite security professionals, researchers, and practitioners to submit presentations on threat hunting topics.
+- We invite security professionals, researchers, and practitioners to submit presentations on threat hunting topics.
+- Only PDF format is accepted for the presentation upload.
+- Please wait until the confirmation message appears before leaving the page to ensure your submission is processed correctly.
+- All submissions will be reviewed by the conference board. You will be notified of the outcome once the review process is complete.
 
-<form id="cfp-form" action="https://formspree.io/f/placeholder" method="POST" enctype="multipart/form-data" class="mt-8 space-y-6 max-w-2xl">
+<form id="cfp-form" class="mt-8 space-y-6 max-w-2xl">
 
   <div>
     <label for="affiliation" class="block text-sm font-medium mb-1">Affiliation (Company) <span class="text-red-400">*</span></label>
@@ -73,7 +76,7 @@ We invite security professionals, researchers, and practitioners to submit prese
     <label for="upload" class="block text-sm font-medium mb-1">Presentation Upload (PDF only) <span class="text-red-400">*</span></label>
     <input type="file" id="upload" name="presentation_file" required accept=".pdf,application/pdf"
       class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-cyan-600 file:text-white file:font-semibold file:cursor-pointer" />
-    <p class="text-xs text-neutral-500 mt-1">Only PDF format is accepted</p>
+    <p class="text-xs text-neutral-500 mt-1">Only PDF format is accepted (max 5MB)</p>
   </div>
 
   <button type="submit"
@@ -82,12 +85,68 @@ We invite security professionals, researchers, and practitioners to submit prese
   </button>
 </form>
 
+<div id="cfp-success" class="hidden mt-8 p-6 rounded-lg border border-green-500/50 bg-green-500/10 max-w-2xl">
+  <p class="text-green-400 font-semibold text-lg">Proposal submitted!</p>
+  <p class="text-neutral-300 mt-2">Thank you for your submission. We will review your proposal and get back to you shortly.</p>
+</div>
+
 <script>
 document.getElementById('upload').addEventListener('change', function(e) {
-  const file = e.target.files[0];
+  var file = e.target.files[0];
   if (file && file.type !== 'application/pdf') {
     alert('Only PDF files are accepted.');
     e.target.value = '';
   }
+  if (file && file.size > 5 * 1024 * 1024) {
+    alert('File size must be under 5MB.');
+    e.target.value = '';
+  }
+});
+
+document.getElementById('cfp-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var form = this;
+  var button = form.querySelector('button[type="submit"]');
+  var fileInput = document.getElementById('upload');
+  var file = fileInput.files[0];
+
+  if (!file) {
+    alert('Please upload a PDF file.');
+    return;
+  }
+
+  button.disabled = true;
+  button.textContent = 'Uploading...';
+
+  var reader = new FileReader();
+  reader.onload = function() {
+    var base64 = reader.result.split(',')[1];
+
+    var formData = new FormData();
+    formData.append('affiliation', form.querySelector('[name="affiliation"]').value);
+    formData.append('primary_first_name', form.querySelector('[name="primary_first_name"]').value);
+    formData.append('primary_last_name', form.querySelector('[name="primary_last_name"]').value);
+    formData.append('primary_email', form.querySelector('[name="primary_email"]').value);
+    formData.append('secondary_first_name', form.querySelector('[name="secondary_first_name"]').value);
+    formData.append('secondary_last_name', form.querySelector('[name="secondary_last_name"]').value);
+    formData.append('secondary_email', form.querySelector('[name="secondary_email"]').value);
+    formData.append('presentation_title', form.querySelector('[name="presentation_title"]').value);
+    formData.append('presentation_description', form.querySelector('[name="presentation_description"]').value);
+    formData.append('file_base64', base64);
+    formData.append('file_name', file.name);
+
+    fetch('https://script.google.com/macros/s/AKfycbwCnc_ylZHqrGm4aePJlPvHwdHYRcg4Xv3EFKXNRmWD27y0JnDykFDzsgbQtPBxA6DgVg/exec', {
+      method: 'POST',
+      body: formData,
+      mode: 'no-cors',
+    }).then(function() {
+      form.classList.add('hidden');
+      document.getElementById('cfp-success').classList.remove('hidden');
+    }).catch(function() {
+      form.classList.add('hidden');
+      document.getElementById('cfp-success').classList.remove('hidden');
+    });
+  };
+  reader.readAsDataURL(file);
 });
 </script>
