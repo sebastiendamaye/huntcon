@@ -41,7 +41,7 @@ Register to attend HUNTCON 2027. Participation is free but registration is manda
           class="form-checkbox" onchange="toggleRoles()" />
         <span>Speaker</span>
       </label>
-      <p id="speaker-note" class="hidden text-sm text-neutral-400 ml-6">(Please also use the <a href="/cfp/" class="text-cyan-400 hover:underline">Call for Papers</a> form to submit your presentation)</p>
+      <p id="speaker-note" class="hidden text-sm text-neutral-400 ml-6">(Please also use the <a href="../cfp/" class="text-cyan-400 hover:underline">Call for Papers</a> form to submit your presentation)</p>
       <label class="flex items-center gap-2 cursor-pointer">
         <input type="checkbox" name="role" value="round_table"
           class="form-checkbox" onchange="toggleRoles()" />

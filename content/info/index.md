@@ -43,7 +43,7 @@ Attendance is free but registration is mandatory for all participants, whether y
 This very first edition of HUNTCON is organized by [**Sébastien Damaye**](https://www.linkedin.com/in/sebastiendamaye/) and sponsored by **Schneider Electric**.
 
 <div class="flex justify-center mt-6">
-  <img src="/images/schneider-electric.png" alt="Schneider Electric" class="h-20 w-auto" />
+  <img src="../images/schneider-electric.png" alt="Schneider Electric" class="h-20 w-auto" />
 </div>
 
 ---
