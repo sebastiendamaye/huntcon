@@ -40,6 +40,16 @@
     </item>
     
     <item>
+      <title>FAQ</title>
+      <link>http://10.226.35.14:8080/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://10.226.35.14:8080/faq/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;General&#xA;    &lt;div id=&#34;general&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#general&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Is HUNTCON free?&lt;/strong&gt;&#xA;Yes. Attendance is completely free, but &lt;a href=&#34;http://10.226.35.14:8080/registration/&#34; &gt;registration&lt;/a&gt; is mandatory.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Can I attend only one of the two days?&lt;/strong&gt;&#xA;Yes, you can attend Day 1 only, Day 2 only, or both.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;How many attendees are expected?&lt;/strong&gt;&#xA;The event is designed for up to 100 participants.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Is this a recurring event?&lt;/strong&gt;&#xA;This is the first edition. We intend to organize HUNTCON every year.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Info</title>
       <link>http://10.226.35.14:8080/info/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
