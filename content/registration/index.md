@@ -9,8 +9,8 @@ Register to attend HUNTCON 2027. Participation is free but registration is manda
 <form id="registration-form" action="https://script.google.com/macros/s/AKfycbyJ2nz-woupO7Y07qzJvbUyWgjN5PxiTmbw4unMlhpZhHKn5qmlYrgqJ8KhBU4s6vigBg/exec" method="POST" class="mt-8 space-y-6 max-w-2xl">
 
   <div>
-    <label for="reg-affiliation" class="block text-sm font-medium mb-1">Affiliation (Company) <span class="text-red-400">*</span></label>
-    <input type="text" id="reg-affiliation" name="affiliation" required
+    <label for="reg-company" class="block text-sm font-medium mb-1">Company <span class="text-red-400">*</span></label>
+    <input type="text" id="reg-company" name="company" required
       class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
   </div>
 

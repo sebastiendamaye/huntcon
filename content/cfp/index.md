@@ -14,8 +14,8 @@ layout: "simple"
 <form id="cfp-form" class="mt-8 space-y-6 max-w-2xl">
 
   <div>
-    <label for="affiliation" class="block text-sm font-medium mb-1">Affiliation (Company) <span class="text-red-400">*</span></label>
-    <input type="text" id="affiliation" name="affiliation" required
+    <label for="company" class="block text-sm font-medium mb-1">Company <span class="text-red-400">*</span></label>
+    <input type="text" id="company" name="company" required
       class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
   </div>
 
@@ -134,7 +134,7 @@ document.getElementById('cfp-form').addEventListener('submit', function(e) {
     var base64 = reader.result.split(',')[1];
 
     var formData = new FormData();
-    formData.append('affiliation', form.querySelector('[name="affiliation"]').value);
+    formData.append('company', form.querySelector('[name="company"]').value);
     formData.append('primary_first_name', form.querySelector('[name="primary_first_name"]').value);
     formData.append('primary_last_name', form.querySelector('[name="primary_last_name"]').value);
     formData.append('primary_email', form.querySelector('[name="primary_email"]').value);
