@@ -20,6 +20,16 @@
     </item>
     
     <item>
+      <title>Code of Conduct</title>
+      <link>http://10.226.35.14:8080/coc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://10.226.35.14:8080/coc/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;Purpose&#xA;    &lt;div id=&#34;purpose&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#purpose&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;p&gt;HUNTCON is dedicated to providing a safe, respectful, and inclusive experience for all participants — regardless of gender, gender identity, age, sexual orientation, disability, physical appearance, race, ethnicity, nationality, or religion.&lt;/p&gt;&#xA;&lt;p&gt;This Code of Conduct applies to all attendees, speakers, sponsors, partners, and staff throughout the entire event, including conference sessions, round tables, networking activities, and any related social events.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Contact</title>
       <link>http://10.226.35.14:8080/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
