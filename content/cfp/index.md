@@ -5,6 +5,8 @@ layout: "simple"
 ---
 
 - We invite security professionals, researchers, and practitioners to submit presentations on threat hunting topics.
+- **Presentations in English are strongly recommended**, as we welcome attendees from across Europe. However, French submissions will also be accepted, since the majority of attendees will still be French-speaking.
+- Each talk is allocated a **1-hour slot**, including 10 minutes for questions.
 - Only PDF format is accepted for the presentation upload.
 - Please wait until the confirmation message appears before leaving the page to ensure your submission is processed correctly.
 - All submissions will be reviewed by the conference board. You will be notified of the outcome once the review process is complete.
@@ -58,6 +60,15 @@ layout: "simple"
         class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
     </div>
   </fieldset>
+
+  <div>
+    <label for="language" class="block text-sm font-medium mb-1">Language <span class="text-red-400">*</span></label>
+    <select id="language" name="language" required
+      class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none">
+      <option value="English" selected>English</option>
+      <option value="French">French</option>
+    </select>
+  </div>
 
   <div>
     <label for="title" class="block text-sm font-medium mb-1">Presentation Title <span class="text-red-400">*</span></label>
@@ -130,6 +141,7 @@ document.getElementById('cfp-form').addEventListener('submit', function(e) {
     formData.append('secondary_first_name', form.querySelector('[name="secondary_first_name"]').value);
     formData.append('secondary_last_name', form.querySelector('[name="secondary_last_name"]').value);
     formData.append('secondary_email', form.querySelector('[name="secondary_email"]').value);
+    formData.append('language', form.querySelector('[name="language"]').value);
     formData.append('presentation_title', form.querySelector('[name="presentation_title"]').value);
     formData.append('presentation_description', form.querySelector('[name="presentation_description"]').value);
     formData.append('file_base64', base64);

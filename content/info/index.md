@@ -16,6 +16,8 @@ While there are hundreds of renowned cybersecurity conferences worldwide — suc
 
 The event is designed for up to **100 attendees** representing major companies, cybersecurity vendors, consulting firms, and industry experts.
 
+The conference and presentations are a mix of **English and French** to accommodate attendees from across all Europe. Round tables will all be held in **English**.
+
 ---
 
 ## Dates
@@ -26,19 +28,106 @@ The event is designed for up to **100 attendees** representing major companies, 
 
 ## Program
 
-The conference is structured around two complementary days:
+The conference is structured around two complementary days. Attendance is free but registration is mandatory for all participants, whether you are an attendee, a speaker, or a round table participant. These roles are not exclusive — you can be both a speaker and a round table participant. [Register here](/registration/).
+
+Food (buffet) and coffee breaks will be provided throughout the event.
 
 ### Day 1 — Conference Sessions
 
-Keynote presentations, technical talks, case studies, demonstrations, and experience-sharing sessions delivered by threat hunting teams, industry experts, and technology partners.
+Keynote presentations, technical talks, case studies, demonstrations, and experience-sharing sessions delivered by threat hunting teams, industry experts, and technology partners. Each talk is a 1-hour slot, including 10 minutes for Q&A. Interested in presenting? [Submit a talk](/cfp/).
 
-Interested in presenting? [Submit a talk](/cfp/).
+| Time | Session |
+|------|---------|
+| 08:30 - 09:00 | Opening Remarks & Sponsors |
+| 09:00 - 10:00 | Talk #1 |
+| 10:00 - 10:30 | ☕ Coffee Break |
+| 10:30 - 11:30 | Talk #2 |
+| 11:30 - 12:30 | Talk #3 |
+| 12:30 - 14:00 | 🍴 Lunch |
+| 14:00 - 15:00 | Talk #4 |
+| 15:00 - 15:30 | ☕ Coffee Break |
+| 15:30 - 16:30 | Talk #5 |
+| 16:30 - 18:00 | Sponsor Demo / Lightning Talks / Panel Discussion |
+| 18:00 - 19:00 | Networking |
+| 19:00 - Late | Networking Dinner / Pub Night |
 
-### Day 2 — Collaborative Round Tables
+### Day 2 — Round Tables
 
-Interactive workshops and discussion groups focused on specific threat-hunting topics, allowing participants to exchange best practices, discuss common challenges, explore emerging techniques, and identify opportunities for collaboration across organizations.
+Each round table is a 45-minute session led by an animator with prepared questions. During [registration](/registration/), select the round tables you'd like to contribute to. For each topic, 5 candidates will be chosen from the registrants to go on stage and share their experience and insights with the audience. Topics are listed in the Round Table Topics section.
 
-Attendance is free but registration is mandatory for all participants, whether you are an attendee, a speaker, or a round table participant. [Register here](/registration/).
+| Time | Session |
+|------|---------|
+| 08:30 - 09:00 | Welcome & Day 2 Overview |
+| 09:00 - 10:00 | Round Table #1 – Threat Hunting Frameworks & Maturity Models |
+| 10:00 - 10:30 | ☕ Coffee Break |
+| 10:30 - 11:30 | Round Table #2 – AI & Agentic Threat Hunting |
+| 11:30 - 12:30 | Round Table #3 – Telemetry Strategy & Data Quality |
+| 12:30 - 14:00 | 🍴 Lunch |
+| 14:00 - 15:00 | Round Table #4 – Measuring Threat Hunting Value |
+| 15:00 - 15:30 | ☕ Coffee Break |
+| 15:30 - 16:30 | Round Table #5 – Building and Scaling a Hunting Team |
+| 16:30 - 17:30 | Closing Panel: Key Takeaways from All Round Tables |
+| 17:30 | Closing Remarks |
+
+---
+
+## Round Table Topics
+
+### 1. Threat Hunting Frameworks & Maturity Models
+
+*"How do we organize, measure, and scale threat hunting?"*
+
+Discussion points:
+- Framework adoption (PEAK, Sqrrl, TaHiTI, custom)
+- Maturity assessment & benchmarking
+- Operating models & team structure
+- Success metrics & KPIs
+- Future framework evolution
+
+### 2. AI & Agentic Threat Hunting
+
+*"How are AI systems changing the threat hunting workflow?"*
+
+Discussion points:
+- Current AI use cases
+- Vibe hunting
+- Human vs agent responsibilities
+- Trust, validation & oversight
+- Adoption challenges & risks
+- The future threat hunter
+
+### 3. Telemetry Strategy & Data Quality
+
+*"Are we hunting with the right data?"*
+
+Discussion points:
+- EDR vs NDR vs SIEM
+- DNS visibility
+- Identity telemetry
+- Data quality
+- Cost vs visibility
+
+### 4. Measuring Threat Hunting Value
+
+*"How do we prove hunting is worth the investment?"*
+
+Discussion points:
+- KPIs / metrics
+- Detections generated
+- Incidents prevented
+- Executive reporting
+- ROI
+
+### 5. Building and Scaling a Hunting Team
+
+*"People, skills, operating models, and culture."*
+
+Discussion points:
+- Dedicated hunters vs rotating analysts
+- Skill development
+- Red/Purple/Hunt collaboration
+- Threat hunting career paths
+- Offshore/onshore models
 
 ---
 

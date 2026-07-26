@@ -52,21 +52,32 @@ Register to attend HUNTCON 2027. Participation is free but registration is manda
 
   <div id="topics-section" class="hidden border border-neutral-700 rounded-lg p-4">
     <label class="block text-sm font-medium mb-2">Round Table Topics <span class="text-red-400">*</span> <span class="text-xs text-neutral-500">(select at least one)</span></label>
+    <p class="text-sm text-neutral-400 mb-3">See the <a href="../info/#round-table-topics" class="text-cyan-400 hover:underline">Info page</a> for details on each topic.</p>
     <div class="space-y-2">
       <label class="flex items-center gap-2 cursor-pointer">
         <input type="checkbox" name="topics" value="threat_hunting_frameworks"
           class="form-checkbox" />
-        <span>Threat Hunting Frameworks</span>
+        <span>Threat Hunting Frameworks & Maturity Models</span>
       </label>
       <label class="flex items-center gap-2 cursor-pointer">
-        <input type="checkbox" name="topics" value="ai_threat_hunting"
+        <input type="checkbox" name="topics" value="ai_agentic_threat_hunting"
           class="form-checkbox" />
-        <span>AI Applied to Threat Hunting</span>
+        <span>AI & Agentic Threat Hunting</span>
       </label>
       <label class="flex items-center gap-2 cursor-pointer">
-        <input type="checkbox" name="topics" value="vibe_hunting"
+        <input type="checkbox" name="topics" value="telemetry_data_quality"
           class="form-checkbox" />
-        <span>Vibe Hunting</span>
+        <span>Telemetry Strategy & Data Quality</span>
+      </label>
+      <label class="flex items-center gap-2 cursor-pointer">
+        <input type="checkbox" name="topics" value="measuring_hunting_value"
+          class="form-checkbox" />
+        <span>Measuring Threat Hunting Value</span>
+      </label>
+      <label class="flex items-center gap-2 cursor-pointer">
+        <input type="checkbox" name="topics" value="building_scaling_team"
+          class="form-checkbox" />
+        <span>Building and Scaling a Hunting Team</span>
       </label>
     </div>
   </div>

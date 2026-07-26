@@ -227,7 +227,7 @@
     
     
     "mainEntityOfPage": "http://10.226.35.14:8080/cfp/",
-    "wordCount": "126"
+    "wordCount": "171"
   }]
   </script>
 
@@ -555,6 +555,8 @@
     <section class="max-w-full mt-6 prose dark:prose-invert">
       <ul>
 <li>We invite security professionals, researchers, and practitioners to submit presentations on threat hunting topics.</li>
+<li><strong>Presentations in English are strongly recommended</strong>, as we welcome attendees from across Europe. However, French submissions will also be accepted, since the majority of attendees will still be French-speaking.</li>
+<li>Each talk is allocated a <strong>1-hour slot</strong>, including 10 minutes for questions.</li>
 <li>Only PDF format is accepted for the presentation upload.</li>
 <li>Please wait until the confirmation message appears before leaving the page to ensure your submission is processed correctly.</li>
 <li>All submissions will be reviewed by the conference board. You will be notified of the outcome once the review process is complete.</li>
@@ -605,6 +607,14 @@
         class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
     </div>
   </fieldset>
+  <div>
+    <label for="language" class="block text-sm font-medium mb-1">Language <span class="text-red-400">*</span></label>
+    <select id="language" name="language" required
+      class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none">
+      <option value="English" selected>English</option>
+      <option value="French">French</option>
+    </select>
+  </div>
   <div>
     <label for="title" class="block text-sm font-medium mb-1">Presentation Title <span class="text-red-400">*</span></label>
     <input type="text" id="title" name="presentation_title" required maxlength="100"
@@ -671,6 +681,7 @@ document.getElementById('cfp-form').addEventListener('submit', function(e) {
     formData.append('secondary_first_name', form.querySelector('[name="secondary_first_name"]').value);
     formData.append('secondary_last_name', form.querySelector('[name="secondary_last_name"]').value);
     formData.append('secondary_email', form.querySelector('[name="secondary_email"]').value);
+    formData.append('language', form.querySelector('[name="language"]').value);
     formData.append('presentation_title', form.querySelector('[name="presentation_title"]').value);
     formData.append('presentation_description', form.querySelector('[name="presentation_description"]').value);
     formData.append('file_base64', base64);
