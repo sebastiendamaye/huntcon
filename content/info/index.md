@@ -55,6 +55,8 @@ Keynote presentations, technical talks, case studies, demonstrations, and experi
 
 Each round table is a 45-minute session led by an animator with prepared questions. During [registration](/registration/), select the round tables you'd like to contribute to. For each topic, 5 candidates will be chosen from the registrants to go on stage and share their experience and insights with the audience. Topics are listed in the Round Table Topics section.
 
+All round tables are held under the [**Chatham House Rule**](https://www.chathamhouse.org/about-us/chatham-house-rule): participants are free to use the information shared, but may not reveal the identity or affiliation of any speaker or participant. This encourages open and honest discussion.
+
 | Time | Session |
 |------|---------|
 | 08:30 - 09:00 | Welcome & Day 2 Overview |
