@@ -9,6 +9,11 @@
   weight = 20
 
 [[main]]
+  name = "Speakers"
+  pageRef = "/speakers/"
+  weight = 25
+
+[[main]]
   name = "Call for Papers"
   pageRef = "/cfp/"
   weight = 30

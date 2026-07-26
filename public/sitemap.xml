@@ -20,4 +20,7 @@
   <url>
     <loc>http://10.226.35.14:8080/registration/</loc>
   </url>
+  <url>
+    <loc>http://10.226.35.14:8080/speakers/</loc>
+  </url>
 </urlset>
