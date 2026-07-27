@@ -58,10 +58,10 @@ No. Round tables are held under the Chatham House Rule — content shared during
 At EDENN, the Schneider Electric headquarters — 1884 Boulevard de La Défense, 92000 Nanterre, France. It is a short walk from La Défense (Grande Arche) station.
 
 **Is food provided?**
-Yes. A buffet lunch and coffee breaks are included on both days.
+Yes. A buffet lunch and coffee breaks are included on both days during the event. Evening dinners, however, are at the charge of each attendee.
 
 **Is there WiFi?**
-Yes, WiFi will be available at the venue.
+No public WiFi will be provided at the venue, but a decent 5G connection is available on site.
 
 **Is there a dress code?**
 No formal dress code. Business casual or whatever you're comfortable in.
