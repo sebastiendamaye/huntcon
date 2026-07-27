@@ -47,7 +47,7 @@ Keynote presentations, technical talks, case studies, demonstrations, and experi
 | 14:00 - 15:00 | Talk #4 |
 | 15:00 - 15:30 | ☕ Coffee Break |
 | 15:30 - 16:30 | Talk #5 |
-| 16:30 - 18:00 | Sponsor Demo / Lightning Talks / Panel Discussion |
+| 16:30 - 18:00 | [Exhibitor Booth Demos](/exhibitors/) |
 | 18:00 - 19:00 | Networking |
 | 19:00 - Late | Networking Dinner / Pub Night |
 
