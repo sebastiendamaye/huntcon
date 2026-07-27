@@ -66,6 +66,9 @@ Yes. A buffet lunch and coffee breaks are included on both days during the event
 **Is there WiFi?**
 No public WiFi will be provided at the venue, but a decent 5G connection is available on site.
 
+**Is the venue accessible for people with reduced mobility?**
+Yes. The venue is fully wheelchair accessible, including entrances, conference rooms, and restrooms.
+
 **Is there a dress code?**
 No formal dress code. Business casual or whatever you're comfortable in.
 
