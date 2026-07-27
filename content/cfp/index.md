@@ -9,7 +9,7 @@ layout: "simple"
 - Each talk is allocated a **1-hour slot**, including 10 minutes for questions.
 - Only PDF format is accepted for the presentation upload.
 - Please wait until the confirmation message appears before leaving the page to ensure your submission is processed correctly.
-- All submissions will be reviewed by the conference board on 1 December 2026. You will be notified of the outcome in the days that follow.
+- All submissions will be reviewed by a panel of experienced threat hunting practitioners on 1 December 2026. You will be notified of the outcome in the days that follow.
 
 ---
 

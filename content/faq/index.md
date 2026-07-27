@@ -88,6 +88,9 @@ Use the [Call for Papers](/cfp/) form. Submissions must include a PDF of your pr
 **When is the CFP deadline?**
 Submissions must be received by **1 November 2026 at midnight CET**.
 
+**Who reviews the submissions?**
+Submissions are reviewed by a panel of experienced threat hunting practitioners.
+
 **When will I know if my talk is accepted?**
 The selection board convenes on **1 December 2026**. All submitters will be notified of the outcome in the days that follow.
 
