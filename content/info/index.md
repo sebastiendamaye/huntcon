@@ -44,7 +44,7 @@ Food (buffet) and coffee breaks will be provided throughout the event.
 
 ### Day 1 — Conference Sessions
 
-Keynote presentations, technical talks, case studies, demonstrations, and experience-sharing sessions delivered by threat hunting teams, industry experts, and technology partners. Each talk is a 1-hour slot, including 10 minutes for Q&A. Interested in presenting? [Submit a talk](/cfp/).
+Keynote presentations, technical talks, case studies, demonstrations, and experience-sharing sessions delivered by threat hunting teams, industry experts, and technology partners. Each talk is a 1-hour slot, including 10 minutes for Q&A. Presentation slides will be published on the website after the event (unless the speaker explicitly requests otherwise). Interested in presenting? [Submit a talk](/cfp/).
 
 | Time | Session |
 |------|---------|
@@ -65,7 +65,7 @@ Keynote presentations, technical talks, case studies, demonstrations, and experi
 
 Each round table is a 45-minute session led by an animator with prepared questions. During [registration](/registration/), select the round tables you'd like to contribute to. For each topic, 5 candidates will be chosen from the registrants to go on stage and share their experience and insights with the audience. Topics are listed in the Round Table Topics section.
 
-All round tables are held under the [**Chatham House Rule**](https://www.chathamhouse.org/about-us/chatham-house-rule): participants are free to use the information shared, but may not reveal the identity or affiliation of any speaker or participant. This encourages open and honest discussion.
+All round tables are held under the [**Chatham House Rule**](https://www.chathamhouse.org/about-us/chatham-house-rule): participants are free to use the information shared, but may not reveal the identity or affiliation of any speaker or participant. This encourages open and honest discussion. An anonymized summary of each round table will be published on the website after the event.
 
 | Time | Session |
 |------|---------|

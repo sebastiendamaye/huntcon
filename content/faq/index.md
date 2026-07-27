@@ -48,10 +48,10 @@ Each round table is a 45-minute session led by an animator with prepared questio
 Yes, these roles are cumulative.
 
 **Will talks be recorded or shared?**
-Conference sessions may be recorded (focusing on the speaker and slides). We will communicate in advance whether recordings will be published.
+Conference sessions may be recorded (focusing on the speaker and slides). We will communicate in advance whether recordings will be published. Presentation slides will be published on the website after the event, unless the speaker explicitly requests otherwise.
 
 **Are round table discussions recorded?**
-No. Round tables are held under the Chatham House Rule — content shared during the discussions must not be attributed to any individual or organization.
+No. Round tables are held under the Chatham House Rule — content shared during the discussions must not be attributed to any individual or organization. An anonymized summary of each round table will be published on the website after the event.
 
 ---
 
