@@ -9,7 +9,17 @@ layout: "simple"
 - Each talk is allocated a **1-hour slot**, including 10 minutes for questions.
 - Only PDF format is accepted for the presentation upload.
 - Please wait until the confirmation message appears before leaving the page to ensure your submission is processed correctly.
-- All submissions will be reviewed by the conference board. You will be notified of the outcome once the review process is complete.
+- All submissions will be reviewed by the conference board on 1 December 2026. You will be notified of the outcome in the days that follow.
+
+---
+
+## Key Dates
+
+| When | Milestone |
+|------|-----------|
+| **1 November 2026** (midnight CET) | CFP Submission Deadline — all proposals must be submitted by this date |
+| **1 December 2026** | Speaker Selection Board — the conference board reviews and selects presentations |
+| **Early December 2026** | Notification to Speakers — all submitters will be notified of the outcome |
 
 <form id="cfp-form" class="mt-8 space-y-6 max-w-2xl">
 
@@ -98,7 +108,7 @@ layout: "simple"
 
 <div id="cfp-success" class="hidden mt-8 p-6 rounded-lg border border-green-500/50 bg-green-500/10 max-w-2xl">
   <p class="text-green-400 font-semibold text-lg">Proposal submitted!</p>
-  <p class="text-neutral-300 mt-2">Thank you for your submission. We will review your proposal and get back to you shortly.</p>
+  <p class="text-neutral-300 mt-2">Thank you for your submission. As a reminder, the submission deadline is <strong>1 November 2026</strong>. The selection board will convene on <strong>1 December 2026</strong>, and you will be notified of the outcome in the days that follow.</p>
 </div>
 
 <script>

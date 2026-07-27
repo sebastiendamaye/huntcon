@@ -7,13 +7,16 @@ layout: "simple"
 ## General
 
 **Is HUNTCON free?**
-Yes. Attendance is completely free, but [registration](/registration/) is mandatory. The [solution showcase](/exhibitors/) also comes with no cost to exhibitors — however, they are expected to bring their own devices required for their demonstration.
+Yes. Attendance is completely free, but [registration](/registration/) is mandatory. Seats are limited to 100 attendees — registration will close once capacity is reached. The [solution showcase](/exhibitors/) also comes with no cost to exhibitors — however, they are expected to bring their own devices required for their demonstration.
 
 **Can I attend only one of the two days?**
 Yes, you can attend Day 1 only, Day 2 only, or both.
 
 **How many attendees are expected?**
 The event is designed for up to 100 participants.
+
+**How many people can register from the same company?**
+Up to 3 participants per organization, including speakers and round table participants.
 
 **Is this a recurring event?**
 This is the first edition. We intend to organize HUNTCON every year.
@@ -80,10 +83,10 @@ Use the [registration form](/registration/). You will receive a confirmation ema
 Use the [Call for Papers](/cfp/) form. Submissions must include a PDF of your presentation.
 
 **When is the CFP deadline?**
-The deadline will be communicated on the website and via email to registered participants.
+Submissions must be received by **1 November 2026 at midnight CET**.
 
 **When will I know if my talk is accepted?**
-All submissions are reviewed by the conference board. You will be notified once the review is complete.
+The selection board convenes on **1 December 2026**. All submitters will be notified of the outcome in the days that follow.
 
 ---
 
