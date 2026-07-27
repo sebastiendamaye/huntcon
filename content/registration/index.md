@@ -4,7 +4,12 @@ description: "Register for HUNTCON 2027"
 layout: "simple"
 ---
 
-Register to attend HUNTCON 2027. Participation is free but registration is mandatory. Seats are limited to 100 attendees — registration will close once capacity is reached. Multiple participants from the same company are welcome, up to a maximum of 3 per organization (including speakers and round table participants).
+- Participation is free but registration is mandatory.
+- Seats are limited to 100 attendees — registration will close once capacity is reached.
+- Up to 3 participants per organization (including speakers and round table participants).
+- Each individual must register separately, even if several people from the same company attend.
+- Registrants will receive a personalized invitation with a QR code in early December 2026.
+- In case of cancellation, please use the [contact form](/contact/) to inform us.
 
 <form id="registration-form" action="https://script.google.com/macros/s/AKfycbyJ2nz-woupO7Y07qzJvbUyWgjN5PxiTmbw4unMlhpZhHKn5qmlYrgqJ8KhBU4s6vigBg/exec" method="POST" class="mt-8 space-y-6 max-w-2xl">
 
