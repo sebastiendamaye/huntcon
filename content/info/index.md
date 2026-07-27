@@ -20,6 +20,16 @@ The conference and presentations are a mix of **English and French** to accommod
 
 ---
 
+## Organizer & Sponsors
+
+This very first edition of HUNTCON is organized by [**Sébastien Damaye**](https://www.linkedin.com/in/sebastiendamaye/) and sponsored by **Schneider Electric**.
+
+<div class="flex justify-center mt-6">
+  <img src="../images/schneider-electric.png" alt="Schneider Electric" class="h-20 w-auto" />
+</div>
+
+---
+
 ## Dates
 
 **March 2027** — two consecutive days (exact dates to be confirmed).
@@ -130,16 +140,6 @@ Discussion points:
 - Red/Purple/Hunt collaboration
 - Threat hunting career paths
 - Offshore/onshore models
-
----
-
-## Organizer & Sponsors
-
-This very first edition of HUNTCON is organized by [**Sébastien Damaye**](https://www.linkedin.com/in/sebastiendamaye/) and sponsored by **Schneider Electric**.
-
-<div class="flex justify-center mt-6">
-  <img src="../images/schneider-electric.png" alt="Schneider Electric" class="h-20 w-auto" />
-</div>
 
 ---
 
