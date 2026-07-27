@@ -3,27 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://10.226.35.14:8080/cfp/</loc>
+    <loc>https://huntcon.fr/cfp/</loc>
   </url>
   <url>
-    <loc>http://10.226.35.14:8080/coc/</loc>
+    <loc>https://huntcon.fr/coc/</loc>
   </url>
   <url>
-    <loc>http://10.226.35.14:8080/contact/</loc>
+    <loc>https://huntcon.fr/contact/</loc>
   </url>
   <url>
-    <loc>http://10.226.35.14:8080/faq/</loc>
+    <loc>https://huntcon.fr/faq/</loc>
   </url>
   <url>
-    <loc>http://10.226.35.14:8080/</loc>
+    <loc>https://huntcon.fr/</loc>
   </url>
   <url>
-    <loc>http://10.226.35.14:8080/info/</loc>
+    <loc>https://huntcon.fr/info/</loc>
   </url>
   <url>
-    <loc>http://10.226.35.14:8080/registration/</loc>
+    <loc>https://huntcon.fr/registration/</loc>
   </url>
   <url>
-    <loc>http://10.226.35.14:8080/speakers/</loc>
+    <loc>https://huntcon.fr/speakers/</loc>
   </url>
 </urlset>

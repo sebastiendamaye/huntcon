@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on HUNTCON 2027</title>
-    <link>http://10.226.35.14:8080/tags/</link>
+    <link>https://huntcon.fr/tags/</link>
     <description>Recent content in Tags on HUNTCON 2027</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 </copyright>
-    <atom:link href="http://10.226.35.14:8080/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huntcon.fr/tags/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

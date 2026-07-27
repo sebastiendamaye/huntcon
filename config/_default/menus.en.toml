@@ -37,3 +37,12 @@
   name = "Contact"
   pageRef = "/contact/"
   weight = 70
+
+[[footer]]
+  name = "#HUNTCON2027"
+  url = "https://www.linkedin.com/company/huntcon/"
+  weight = 10
+  pre = "linkedin"
+  [footer.params]
+    target = "_blank"
+    rel = "noopener noreferrer"
