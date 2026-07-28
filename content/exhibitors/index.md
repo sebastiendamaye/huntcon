@@ -14,25 +14,30 @@ This is not a sales floor — exhibitors are selected for their relevance to the
 
 ## Exhibitors
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
-<a href="https://www.splunk.com" target="_blank" rel="noopener noreferrer" class="border border-neutral-700 rounded-lg block hover:border-neutral-500 transition-colors" style="padding:1.5rem;">
-  <div style="display:flex; align-items:center; gap:3rem;">
-    <div style="flex-shrink:0;">
-      <img src="/images/exhibitors/splunk_white.png" alt="Splunk" style="height:100px;" class="object-contain nozoom">
-    </div>
-    <div class="text-left">
-      <p class="font-semibold text-lg">Splunk</p>
-      <p class="text-base text-neutral-400 mt-1">Unified security and observability platform for threat detection and investigation.</p>
-    </div>
+<div class="flex flex-wrap justify-center gap-4 mt-6">
+<a href="https://www.splunk.com" target="_blank" rel="noopener noreferrer" class="border border-neutral-700 rounded-lg block hover:border-neutral-500 transition-colors text-center" style="flex:1 1 260px; max-width:300px; min-width:220px; min-height:160px; padding:0.5rem; display:flex; flex-direction:column; justify-content:space-between; align-items:center;">
+  <div style="flex:1; display:flex; align-items:center; justify-content:center; width:100%;">
+    <img src="/images/exhibitors/splunk_white.png" alt="Splunk" style="width:180px; height:auto;" class="object-contain nozoom">
   </div>
+  <p class="font-semibold text-lg" style="margin:0;">Splunk</p>
 </a>
-<div class="border border-neutral-700 rounded-lg p-3 text-center">
-  <div class="w-12 h-12 mx-auto mb-2 rounded-full bg-neutral-800 flex items-center justify-center text-neutral-500 text-lg">?</div>
-  <p class="font-semibold text-sm">To be announced</p>
+<a href="https://www.nebulock.io" target="_blank" rel="noopener noreferrer" class="border border-neutral-700 rounded-lg block hover:border-neutral-500 transition-colors text-center" style="flex:1 1 260px; max-width:300px; min-width:220px; min-height:160px; padding:0.5rem; display:flex; flex-direction:column; justify-content:space-between; align-items:center;">
+  <div style="flex:1; display:flex; align-items:center; justify-content:center; width:100%;">
+    <img src="/images/exhibitors/nebulock_white.png" alt="Nebulock" style="width:180px; height:auto;" class="object-contain nozoom">
+  </div>
+  <p class="font-semibold text-lg" style="margin:0;">Nebulock</p>
+</a>
+<div class="border border-neutral-700 rounded-lg text-center" style="flex:1 1 260px; max-width:300px; min-width:220px; min-height:160px; padding:0.5rem; display:flex; flex-direction:column; justify-content:space-between; align-items:center;">
+  <div style="flex:1; display:flex; align-items:center; justify-content:center; width:100%;">
+    <div class="w-12 h-12 rounded-full bg-neutral-800 flex items-center justify-center text-neutral-500 text-lg">?</div>
+  </div>
+  <p class="font-semibold text-sm" style="margin:0;">To be announced</p>
 </div>
-<div class="border border-neutral-700 rounded-lg p-3 text-center">
-  <div class="w-12 h-12 mx-auto mb-2 rounded-full bg-neutral-800 flex items-center justify-center text-neutral-500 text-lg">?</div>
-  <p class="font-semibold text-sm">To be announced</p>
+<div class="border border-neutral-700 rounded-lg text-center" style="flex:1 1 260px; max-width:300px; min-width:220px; min-height:160px; padding:0.5rem; display:flex; flex-direction:column; justify-content:space-between; align-items:center;">
+  <div style="flex:1; display:flex; align-items:center; justify-content:center; width:100%;">
+    <div class="w-12 h-12 rounded-full bg-neutral-800 flex items-center justify-center text-neutral-500 text-lg">?</div>
+  </div>
+  <p class="font-semibold text-sm" style="margin:0;">To be announced</p>
 </div>
 </div>
 
