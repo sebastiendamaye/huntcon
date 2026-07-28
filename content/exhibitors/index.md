@@ -23,22 +23,16 @@ This is not a sales floor — exhibitors are selected for their relevance to the
 </a>
 <a href="https://www.nebulock.io" target="_blank" rel="noopener noreferrer" class="border border-neutral-700 rounded-lg block hover:border-neutral-500 transition-colors text-center" style="flex:1 1 260px; max-width:300px; min-width:220px; min-height:160px; padding:0.5rem; display:flex; flex-direction:column; justify-content:space-between; align-items:center;">
   <div style="flex:1; display:flex; align-items:center; justify-content:center; width:100%;">
-    <img src="/images/exhibitors/nebulock.png" alt="Nebulock" style="width:180px; height:auto;" class="object-contain nozoom">
+    <img src="/images/exhibitors/nebulock.png" alt="Nebulock" style="width:220px; height:auto;" class="object-contain nozoom">
   </div>
   <p class="font-semibold text-lg" style="margin:0;">Nebulock</p>
 </a>
-<div class="border border-neutral-700 rounded-lg text-center" style="flex:1 1 260px; max-width:300px; min-width:220px; min-height:160px; padding:0.5rem; display:flex; flex-direction:column; justify-content:space-between; align-items:center;">
+<a href="https://www.sentinelone.com" target="_blank" rel="noopener noreferrer" class="border border-neutral-700 rounded-lg block hover:border-neutral-500 transition-colors text-center" style="flex:1 1 260px; max-width:300px; min-width:220px; min-height:160px; padding:0.5rem; display:flex; flex-direction:column; justify-content:space-between; align-items:center;">
   <div style="flex:1; display:flex; align-items:center; justify-content:center; width:100%;">
-    <div class="w-12 h-12 rounded-full bg-neutral-800 flex items-center justify-center text-neutral-500 text-lg">?</div>
+    <img src="/images/exhibitors/sentinelone.png" alt="SentinelOne" style="width:220px; height:auto;" class="object-contain nozoom">
   </div>
-  <p class="font-semibold text-sm" style="margin:0;">To be announced</p>
-</div>
-<div class="border border-neutral-700 rounded-lg text-center" style="flex:1 1 260px; max-width:300px; min-width:220px; min-height:160px; padding:0.5rem; display:flex; flex-direction:column; justify-content:space-between; align-items:center;">
-  <div style="flex:1; display:flex; align-items:center; justify-content:center; width:100%;">
-    <div class="w-12 h-12 rounded-full bg-neutral-800 flex items-center justify-center text-neutral-500 text-lg">?</div>
-  </div>
-  <p class="font-semibold text-sm" style="margin:0;">To be announced</p>
-</div>
+  <p class="font-semibold text-lg" style="margin:0;">SentinelOne</p>
+</a>
 </div>
 
 ---
