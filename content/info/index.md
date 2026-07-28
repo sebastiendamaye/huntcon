@@ -186,6 +186,8 @@ The closest international airports are:
 
 ## Accommodation
 
+We welcome participants from any country. However, since the conference is entirely free, we are unable to cover travel or accommodation costs for anyone — including speakers. All participants are responsible for their own travel arrangements.
+
 The La Défense business district offers numerous hotels within walking distance. We recommend booking early as March is a busy period for conferences.
 
 ---

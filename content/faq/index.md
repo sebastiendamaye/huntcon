@@ -9,6 +9,9 @@ layout: "simple"
 **Is HUNTCON free?**
 Yes. Attendance is completely free, but [registration](/registration/) is mandatory. Seats are limited to 100 attendees — registration will close once capacity is reached. The [solution showcase](/exhibitors/) also comes with no cost to exhibitors — however, they are expected to bring their own devices required for their demonstration.
 
+**Do you cover travel or accommodation costs?**
+We welcome attendees from any country, but since the conference is entirely free, we are unable to cover travel or accommodation expenses for anyone — including speakers. All participants are responsible for their own travel arrangements.
+
 **Can I attend only one of the two days?**
 Yes, you can attend Day 1 only, Day 2 only, or both.
 

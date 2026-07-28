@@ -5,6 +5,7 @@ layout: "simple"
 ---
 
 - We invite security professionals, researchers, and practitioners to submit presentations on threat hunting topics.
+- We welcome speakers from any country. However, as the conference is entirely free, we are unable to cover travel or accommodation expenses for speakers. All speakers are responsible for their own travel arrangements.
 - **Presentations in English are strongly recommended**, as we welcome attendees from across Europe. However, French submissions will also be accepted, since the majority of attendees will still be French-speaking.
 - Each talk is allocated a **1-hour slot**, including 10 minutes for questions.
 - Only PDF format is accepted for the presentation upload.

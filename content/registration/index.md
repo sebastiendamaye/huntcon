@@ -5,6 +5,7 @@ layout: "simple"
 ---
 
 - Participation is free but registration is mandatory.
+- We welcome attendees from any country; however, as the conference is entirely free, travel and accommodation costs are not covered for any participant, including speakers.
 - Seats are limited to 100 attendees — registration will close once capacity is reached.
 - Up to 3 participants per organization (including speakers, round table participants, and exhibitors).
 - Each individual must register separately, even if several people from the same company attend.
