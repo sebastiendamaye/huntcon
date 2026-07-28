@@ -38,7 +38,7 @@ This very first edition of HUNTCON is organized by [**Sébastien Damaye**](https
 
 ## Program
 
-The conference is structured around two complementary days. Attendance is free but registration is mandatory for all participants, whether you are an attendee, a speaker, or a round table participant. These roles are not exclusive — you can be both a speaker and a round table participant. [Register here](/registration/).
+The conference is structured around two complementary days. Attendance is free but registration is mandatory for all participants, whether you are an attendee, a speaker, a round table participant, or an exhibitor. These roles are not exclusive — you can be both a speaker and a round table participant, and exhibitors should also register using the form and select the Exhibitor role. [Register here](/registration/).
 
 Food (buffet) and coffee breaks will be provided throughout the event.
 

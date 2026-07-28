@@ -16,7 +16,7 @@ Yes, you can attend Day 1 only, Day 2 only, or both.
 The event is designed for up to 100 participants.
 
 **How many people can register from the same company?**
-Up to 3 participants per organization, including speakers and round table participants.
+Up to 3 participants per organization, including speakers, round table participants, and exhibitors.
 
 **Is this a recurring event?**
 This is the first edition. We intend to organize HUNTCON every year.
@@ -80,7 +80,7 @@ It's not required. Day 1 is presentation-focused, and Day 2 round tables are dis
 ## Registration & CFP
 
 **How do I register?**
-Use the [registration form](/registration/). You will receive a confirmation email.
+Use the [registration form](/registration/). If you are exhibiting, select the Exhibitor role when registering. You will receive a confirmation email.
 
 **How do I submit a talk?**
 Use the [Call for Papers](/cfp/) form. Submissions must include a PDF of your presentation.

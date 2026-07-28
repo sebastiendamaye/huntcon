@@ -45,4 +45,4 @@ This is not a sales floor — exhibitors are selected for their relevance to the
 
 ## Interested in exhibiting?
 
-If your solution is relevant to threat hunting practitioners and you'd like to showcase it at HUNTCON 2027, please reach out via the [contact form](/contact/).
+If your solution is relevant to threat hunting practitioners and you'd like to showcase it at HUNTCON 2027, please reach out via the [contact form](/contact/). Exhibitors should also register using the [registration form](/registration/) and select the Exhibitor role.

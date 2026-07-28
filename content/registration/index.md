@@ -6,8 +6,9 @@ layout: "simple"
 
 - Participation is free but registration is mandatory.
 - Seats are limited to 100 attendees — registration will close once capacity is reached.
-- Up to 3 participants per organization (including speakers and round table participants).
+- Up to 3 participants per organization (including speakers, round table participants, and exhibitors).
 - Each individual must register separately, even if several people from the same company attend.
+- If you are coming as an exhibitor, select the Exhibitor role below when registering.
 - Registrants will receive a personalized invitation with a QR code in early December 2026.
 - In case of cancellation, please use the [contact form](/contact/) to inform us.
 
@@ -39,7 +40,7 @@ layout: "simple"
   </div>
 
   <div>
-    <label class="block text-sm font-medium mb-2">Want to actively contribute? (optional)</label>
+    <label class="block text-sm font-medium mb-2">Want to actively contribute or exhibit? (optional)</label>
     <div class="space-y-2">
       <label class="flex items-center gap-2 cursor-pointer">
         <input type="checkbox" name="role" value="speaker"
@@ -52,37 +53,41 @@ layout: "simple"
           class="form-checkbox" onchange="toggleRoles()" />
         <span>Participant to a Round Table</span>
       </label>
-    </div>
-  </div>
-
-  <div id="topics-section" class="hidden border border-neutral-700 rounded-lg p-4">
-    <label class="block text-sm font-medium mb-2">Round Table Topics <span class="text-red-400">*</span> <span class="text-xs text-neutral-500">(select at least one)</span></label>
-    <p class="text-sm text-neutral-400 mb-3">See the <a href="../info/#round-table-topics" class="text-cyan-400 hover:underline">Info page</a> for details on each topic.</p>
-    <div class="space-y-2">
+      <div id="topics-section" class="hidden border border-neutral-700 rounded-lg p-4 ml-6">
+        <label class="block text-sm font-medium mb-2">Round Table Topics <span class="text-red-400">*</span> <span class="text-xs text-neutral-500">(select at least one)</span></label>
+        <p class="text-sm text-neutral-400 mb-3">See the <a href="../info/#round-table-topics" class="text-cyan-400 hover:underline">Info page</a> for details on each topic.</p>
+        <div class="space-y-2">
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" name="topics" value="threat_hunting_frameworks"
+              class="form-checkbox" />
+            <span>Threat Hunting Frameworks & Maturity Models</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" name="topics" value="ai_agentic_threat_hunting"
+              class="form-checkbox" />
+            <span>AI & Agentic Threat Hunting</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" name="topics" value="telemetry_data_quality"
+              class="form-checkbox" />
+            <span>Telemetry Strategy & Data Quality</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" name="topics" value="measuring_hunting_value"
+              class="form-checkbox" />
+            <span>Measuring Threat Hunting Value</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" name="topics" value="building_scaling_team"
+              class="form-checkbox" />
+            <span>Building and Scaling a Hunting Team</span>
+          </label>
+        </div>
+      </div>
       <label class="flex items-center gap-2 cursor-pointer">
-        <input type="checkbox" name="topics" value="threat_hunting_frameworks"
+        <input type="checkbox" name="role" value="exhibitor"
           class="form-checkbox" />
-        <span>Threat Hunting Frameworks & Maturity Models</span>
-      </label>
-      <label class="flex items-center gap-2 cursor-pointer">
-        <input type="checkbox" name="topics" value="ai_agentic_threat_hunting"
-          class="form-checkbox" />
-        <span>AI & Agentic Threat Hunting</span>
-      </label>
-      <label class="flex items-center gap-2 cursor-pointer">
-        <input type="checkbox" name="topics" value="telemetry_data_quality"
-          class="form-checkbox" />
-        <span>Telemetry Strategy & Data Quality</span>
-      </label>
-      <label class="flex items-center gap-2 cursor-pointer">
-        <input type="checkbox" name="topics" value="measuring_hunting_value"
-          class="form-checkbox" />
-        <span>Measuring Threat Hunting Value</span>
-      </label>
-      <label class="flex items-center gap-2 cursor-pointer">
-        <input type="checkbox" name="topics" value="building_scaling_team"
-          class="form-checkbox" />
-        <span>Building and Scaling a Hunting Team</span>
+        <span>Exhibitor</span>
       </label>
     </div>
   </div>
