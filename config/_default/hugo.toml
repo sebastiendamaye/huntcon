@@ -2,6 +2,7 @@ baseURL = "https://huntcon.fr/"
 locale = "en"
 title = "HUNTCON 2027"
 theme = "blowfish"
+enableRobotsTXT = true
 
 [markup]
   [markup.goldmark]

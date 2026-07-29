@@ -2,6 +2,9 @@
 title: "Registration Statistics"
 description: "HUNTCON 2027 registration statistics"
 layout: "simple"
+robots: "noindex, nofollow"
+sitemap:
+  disable: true
 ---
 
 <div id="stats-loading" class="text-neutral-400">Loading statistics...</div>
