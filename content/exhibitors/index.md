@@ -14,7 +14,7 @@ This is not a sales floor — exhibitors are selected for their relevance to the
 
 ## Exhibitors
 
-<div class="flex flex-wrap justify-center gap-4 mt-6">
+<div class="not-prose flex flex-wrap justify-center gap-4 mt-6">
 <a href="https://www.splunk.com" target="_blank" rel="noopener noreferrer" class="border border-neutral-700 rounded-lg block hover:border-neutral-500 transition-colors text-center" style="flex:1 1 260px; max-width:300px; min-width:220px; min-height:160px; padding:0.5rem; display:flex; flex-direction:column; justify-content:space-between; align-items:center;">
   <div style="flex:1; display:flex; align-items:center; justify-content:center; width:100%;">
     <img src="/images/exhibitors/splunk.png" alt="Splunk" style="width:180px; height:auto;" class="object-contain nozoom">
@@ -50,6 +50,12 @@ This is not a sales floor — exhibitors are selected for their relevance to the
     <img src="/images/exhibitors/imperum.svg" alt="Imperum" style="width:220px; height:auto;" class="object-contain nozoom">
   </div>
   <p class="font-semibold text-lg" style="margin:0;">Imperum</p>
+</a>
+<a href="https://www.intel471.com/platform/cyber-threat-hunting" target="_blank" rel="noopener noreferrer" class="border border-neutral-700 rounded-lg block hover:border-neutral-500 transition-colors text-center" style="flex:1 1 260px; max-width:300px; min-width:220px; min-height:160px; padding:0.5rem; display:flex; flex-direction:column; justify-content:space-between; align-items:center;">
+  <div style="flex:1; display:flex; align-items:center; justify-content:center; width:100%;">
+    <img src="/images/exhibitors/intel471.png" alt="Intel 471" style="width:220px; height:auto;" class="object-contain nozoom">
+  </div>
+  <p class="font-semibold text-lg" style="margin:0;">Intel 471</p>
 </a>
 </div>
 
