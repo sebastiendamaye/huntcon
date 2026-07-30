@@ -43,6 +43,20 @@ sitemap:
     </table>
   </div>
 
+  <div>
+    <h2 class="text-2xl font-bold mb-4">Companies</h2>
+    <p class="text-lg text-neutral-300 mb-4">Distinct companies: <span id="stat-companies-count" class="font-bold text-cyan-400"></span></p>
+    <table class="w-full text-left border-collapse">
+      <thead>
+        <tr class="border-b border-neutral-700">
+          <th class="py-2 pr-4 text-neutral-400 font-medium">Company</th>
+          <th class="py-2 text-neutral-400 font-medium">Registrations</th>
+        </tr>
+      </thead>
+      <tbody id="companies-tbody"></tbody>
+    </table>
+  </div>
+
 </div>
 
 <script>
@@ -77,6 +91,21 @@ sitemap:
         tr.className = 'border-b border-neutral-700/50';
         tr.innerHTML = '<td class="py-2 pr-4">' + topic + '</td><td class="py-2 font-mono">' + topics[topic] + '</td>';
         topicsBody.appendChild(tr);
+      });
+
+      var companiesBody = document.getElementById('companies-tbody');
+      var companies = data.companies || {};
+      var companyNames = Object.keys(companies).sort(function(a, b) {
+        return companies[b] - companies[a];
+      });
+      document.getElementById('stat-companies-count').textContent = companyNames.length;
+      companyNames.forEach(function(company) {
+        var count = companies[company];
+        var tr = document.createElement('tr');
+        tr.className = 'border-b border-neutral-700/50';
+        var countClass = count > 3 ? 'py-2 font-mono font-bold text-red-400' : 'py-2 font-mono';
+        tr.innerHTML = '<td class="py-2 pr-4">' + company + '</td><td class="' + countClass + '">' + count + '</td>';
+        companiesBody.appendChild(tr);
       });
     })
     .catch(function(err) {
