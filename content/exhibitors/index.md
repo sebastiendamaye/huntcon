@@ -57,6 +57,12 @@ This is not a sales floor — exhibitors are selected for their relevance to the
   </div>
   <p class="font-semibold text-lg" style="margin:0;">Intel 471</p>
 </a>
+<a href="https://www.sekoia.io" target="_blank" rel="noopener noreferrer" class="border border-neutral-700 rounded-lg block hover:border-neutral-500 transition-colors text-center" style="flex:1 1 260px; max-width:300px; min-width:220px; min-height:160px; padding:0.5rem; display:flex; flex-direction:column; justify-content:space-between; align-items:center;">
+  <div style="flex:1; display:flex; align-items:center; justify-content:center; width:100%;">
+    <img src="/images/exhibitors/sekoia.png" alt="Sekoia" style="width:220px; height:auto;" class="object-contain nozoom">
+  </div>
+  <p class="font-semibold text-lg" style="margin:0;">Sekoia</p>
+</a>
 </div>
 
 ---
