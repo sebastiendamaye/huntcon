@@ -34,6 +34,8 @@ This very first edition of HUNTCON is organized by [**Sébastien Damaye**](https
 
 **4–5 March 2027** (Thursday and Friday) — a two-day, in-person event.
 
+<a href="/huntcon-2027.ics" download class="inline-flex items-center gap-2 mt-2 text-primary-500 hover:text-primary-400 transition-colors">📅 Add to my calendar (.ics)</a>
+
 ---
 
 ## Program
