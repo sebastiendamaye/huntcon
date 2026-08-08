@@ -5,7 +5,7 @@
     <img src="{{ "images/logo.png" | relURL }}" alt="HUNTCON 2027 Logo" class="h-[45vh] w-auto object-contain -mt-8" />
     <div class="flex flex-col items-center gap-2 mt-20">
       <p class="text-xl text-neutral-200 font-medium max-w-xl">The first European conference dedicated to Threat Hunting.</p>
-      <p class="text-lg text-neutral-400">4–5 March 2027 — La Défense, Paris</p>
+      <p class="text-lg text-neutral-400">4–5 March 2027<span id="huntcon-countdown" class="text-neutral-500"></span> — La Défense, Paris</p>
       <p class="text-sm text-neutral-500">100 practitioners. 5 talks. 5 round tables. 1 mission.</p>
       <div class="flex gap-4 mt-4">
         <a href="/registration/"
@@ -25,4 +25,34 @@
     </div>
   </div>
 </div>
+<script>
+  (function () {
+    var el = document.getElementById("huntcon-countdown");
+    if (!el) return;
+    // Conference runs 4–5 March 2027, starting 09:00 CET (UTC+1).
+    var start = Date.parse("2027-03-04T09:00:00+01:00");
+    var end = Date.parse("2027-03-05T23:59:59+01:00");
+    // Count whole calendar days (local midnight to the event's start date) so the
+    // number only ticks over at midnight rather than depending on the hour of day.
+    var startDay = new Date(2027, 2, 4);
+    function render() {
+      var now = Date.now();
+      var label;
+      if (now >= end) {
+        label = "that's a wrap";
+      } else if (now >= start) {
+        label = "happening now";
+      } else {
+        var t = new Date();
+        var today = new Date(t.getFullYear(), t.getMonth(), t.getDate());
+        var days = Math.round((startDay - today) / 86400000);
+        label = days === 1 ? "starts tomorrow" : days + " days to go";
+      }
+      el.textContent = " (" + label + ")";
+    }
+    render();
+    // Refresh hourly so the day count stays accurate across a long-lived tab.
+    setInterval(render, 3600000);
+  })();
+</script>
 {{ end }}
