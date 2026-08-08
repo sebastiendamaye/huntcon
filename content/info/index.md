@@ -32,7 +32,7 @@ This very first edition of HUNTCON is organized by [**Sébastien Damaye**](https
 
 ## Dates
 
-**March 2027** — two consecutive days (exact dates to be confirmed).
+**4–5 March 2027** (Thursday and Friday) — a two-day, in-person event.
 
 ---
 
@@ -48,7 +48,7 @@ Keynote presentations, technical talks, case studies, demonstrations, and experi
 
 | Time | Session |
 |------|---------|
-| 08:30 - 09:00 | Opening Remarks & Sponsors |
+| 08:30 - 09:00 | Opening Remarks |
 | 09:00 - 10:00 | Talk #1 |
 | 10:00 - 10:30 | ☕ Coffee Break |
 | 10:30 - 11:30 | Talk #2 |

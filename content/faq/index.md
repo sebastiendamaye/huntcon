@@ -6,6 +6,9 @@ layout: "simple"
 
 ## General
 
+**When and where does HUNTCON take place?**
+HUNTCON 2027 is held on **4–5 March 2027** (Thursday and Friday) at EDENN, the Schneider Electric headquarters — 1884 Boulevard de La Défense, 92000 Nanterre, France.
+
 **Is HUNTCON free?**
 Yes. Attendance is completely free, but [registration](/registration/) is mandatory. Seats are limited to 100 attendees — registration will close once capacity is reached. The [solution showcase](/exhibitors/) also comes with no cost to exhibitors — however, they are expected to bring their own devices required for their demonstration.
 
