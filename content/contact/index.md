@@ -39,6 +39,12 @@ Have questions about HUNTCON 2027? Reach out to us using the form below.
       class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none"></textarea>
   </div>
 
+  <!-- Honeypot: hidden from humans, bots tend to fill it. Server-side check rejects any submission where this is non-empty. -->
+  <div aria-hidden="true" style="position:absolute; left:-9999px; top:-9999px;">
+    <label for="contact-website">Website</label>
+    <input type="text" id="contact-website" name="website" tabindex="-1" autocomplete="off" />
+  </div>
+
   <button type="submit"
     class="px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-semibold hover:opacity-90 transition-opacity cursor-pointer">
     Send Message
