@@ -40,6 +40,12 @@ layout: "simple"
       class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
   </div>
 
+  <!-- Honeypot: hidden from humans, bots tend to fill it. Server-side check rejects any submission where this is non-empty. -->
+  <div aria-hidden="true" style="position:absolute; left:-9999px; top:-9999px;">
+    <label for="reg-website">Website</label>
+    <input type="text" id="reg-website" name="website" tabindex="-1" autocomplete="off" />
+  </div>
+
   <div>
     <label class="block text-sm font-medium mb-2">Want to actively contribute or exhibit? (optional)</label>
     <div class="space-y-2">
