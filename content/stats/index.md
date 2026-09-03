@@ -95,12 +95,25 @@ sitemap:
 
       var companiesBody = document.getElementById('companies-tbody');
       var companies = data.companies || {};
-      var companyNames = Object.keys(companies).sort(function(a, b) {
-        return companies[b] - companies[a];
+
+      // Group companies with the same name regardless of letter case
+      // (e.g. "Schneider Electric" and "SCHNEIDER ELECTRIC" count as one).
+      var grouped = {};
+      Object.keys(companies).forEach(function(company) {
+        var key = company.trim().toLowerCase();
+        if (!grouped[key]) {
+          grouped[key] = { label: company.trim(), count: 0 };
+        }
+        grouped[key].count += companies[company];
+      });
+
+      var companyNames = Object.keys(grouped).sort(function(a, b) {
+        return grouped[b].count - grouped[a].count;
       });
       document.getElementById('stat-companies-count').textContent = companyNames.length;
-      companyNames.forEach(function(company) {
-        var count = companies[company];
+      companyNames.forEach(function(key) {
+        var company = grouped[key].label;
+        var count = grouped[key].count;
         var tr = document.createElement('tr');
         tr.className = 'border-b border-neutral-700/50';
         var countClass = count > 3 ? 'py-2 font-mono font-bold text-red-400' : 'py-2 font-mono';
