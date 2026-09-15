@@ -14,7 +14,7 @@ While there are hundreds of renowned cybersecurity conferences worldwide — suc
 
 **HUNTCON 2027** aims to fill that gap by bringing together threat hunting practitioners, cybersecurity leaders, researchers, and experts from across Europe for a two-day, in-person event. This is a first-of-its-kind conference in France dedicated exclusively to the discipline of Threat Hunting.
 
-The event is designed for up to **100 attendees** representing major companies, cybersecurity vendors, consulting firms, and industry experts.
+The event is designed for up to **110 attendees** representing major companies, cybersecurity vendors, consulting firms, and industry experts.
 
 The conference and presentations are a mix of **English and French** to accommodate attendees from across all Europe. Round tables will all be held in **English**.
 

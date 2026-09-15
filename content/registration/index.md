@@ -6,12 +6,17 @@ layout: "simple"
 
 - Participation is free but registration is mandatory.
 - We welcome attendees from any country; however, as the conference is entirely free, travel and accommodation costs are not covered for any participant, including speakers.
-- Seats are limited to 100 attendees — registration will close once capacity is reached.
+- Seats are limited to 110 attendees — registration will close once capacity is reached.
 - Up to 3 participants per organization (including speakers, round table participants, and exhibitors).
 - Each individual must register separately, even if several people from the same company attend.
 - If you are coming as an exhibitor, select the Exhibitor role below when registering.
 - Registrants will receive a personalized invitation with a QR code in early December 2026.
 - In case of cancellation, please use the [contact form](/contact/) to inform us.
+
+<div id="registration-closed" class="hidden mt-8 p-6 rounded-lg border border-red-500/50 bg-red-500/10 max-w-2xl">
+  <p class="text-red-400 font-semibold text-lg">We are sorry but the capacity is reached and we can no longer process registrations.</p>
+  <p class="text-neutral-300 mt-2">If you are an exhibitor, you can use the <a href="/contact/" class="text-cyan-400 hover:underline">contact form</a> to get in touch with the team.</p>
+</div>
 
 <form id="registration-form" action="https://script.google.com/macros/s/AKfycbyJ2nz-woupO7Y07qzJvbUyWgjN5PxiTmbw4unMlhpZhHKn5qmlYrgqJ8KhBU4s6vigBg/exec" method="POST" class="mt-8 space-y-6 max-w-2xl">
 
@@ -111,58 +116,93 @@ layout: "simple"
 </div>
 
 <script>
-function toggleRoles() {
-  const speakerChecked = document.querySelector('input[name="role"][value="speaker"]').checked;
-  const roundTableChecked = document.querySelector('input[name="role"][value="round_table"]').checked;
-  const topicsSection = document.getElementById('topics-section');
-  const topicCheckboxes = topicsSection.querySelectorAll('input[type="checkbox"]');
-  const speakerNote = document.getElementById('speaker-note');
+(function() {
+  const REGISTRATION_CAPACITY = 130;
+  const STATS_URL = 'https://script.google.com/macros/s/AKfycbyJ2nz-woupO7Y07qzJvbUyWgjN5PxiTmbw4unMlhpZhHKn5qmlYrgqJ8KhBU4s6vigBg/exec';
+  const form = document.getElementById('registration-form');
+  const closedMessage = document.getElementById('registration-closed');
 
-  if (roundTableChecked) {
-    topicsSection.classList.remove('hidden');
-    topicCheckboxes.forEach(cb => cb.removeAttribute('disabled'));
-  } else {
-    topicsSection.classList.add('hidden');
-    topicCheckboxes.forEach(cb => {
-      cb.checked = false;
-      cb.setAttribute('disabled', 'disabled');
-    });
-  }
-
-  if (speakerChecked) {
-    speakerNote.classList.remove('hidden');
-  } else {
-    speakerNote.classList.add('hidden');
-  }
-}
-
-document.getElementById('registration-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  var form = this;
-
-  const roundTableChecked = document.querySelector('input[name="role"][value="round_table"]').checked;
-  if (roundTableChecked) {
-    const checked = document.querySelectorAll('#topics-section input[type="checkbox"]:checked');
-    if (checked.length === 0) {
-      alert('Please select at least one round table topic.');
+  function updateRegistrationAvailability(total) {
+    const currentTotal = Number(total) || 0;
+    if (currentTotal >= REGISTRATION_CAPACITY) {
+      form.classList.add('hidden');
+      closedMessage.classList.remove('hidden');
       return;
+    }
+
+    form.classList.remove('hidden');
+    closedMessage.classList.add('hidden');
+  }
+
+  fetch(STATS_URL)
+    .then(function(response) {
+      if (!response.ok) {
+        throw new Error('Unable to fetch registration statistics.');
+      }
+      return response.json();
+    })
+    .then(function(data) {
+      updateRegistrationAvailability(data && data.total);
+    })
+    .catch(function() {
+      // Keep the form visible if the stats endpoint is unavailable.
+      form.classList.remove('hidden');
+      closedMessage.classList.add('hidden');
+    });
+
+  function toggleRoles() {
+    const speakerChecked = document.querySelector('input[name="role"][value="speaker"]').checked;
+    const roundTableChecked = document.querySelector('input[name="role"][value="round_table"]').checked;
+    const topicsSection = document.getElementById('topics-section');
+    const topicCheckboxes = topicsSection.querySelectorAll('input[type="checkbox"]');
+    const speakerNote = document.getElementById('speaker-note');
+
+    if (roundTableChecked) {
+      topicsSection.classList.remove('hidden');
+      topicCheckboxes.forEach(cb => cb.removeAttribute('disabled'));
+    } else {
+      topicsSection.classList.add('hidden');
+      topicCheckboxes.forEach(cb => {
+        cb.checked = false;
+        cb.setAttribute('disabled', 'disabled');
+      });
+    }
+
+    if (speakerChecked) {
+      speakerNote.classList.remove('hidden');
+    } else {
+      speakerNote.classList.add('hidden');
     }
   }
 
-  var button = form.querySelector('button[type="submit"]');
-  button.disabled = true;
-  button.textContent = 'Submitting...';
+  document.getElementById('registration-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var form = this;
 
-  fetch(form.action, {
-    method: 'POST',
-    body: new FormData(form),
-    mode: 'no-cors',
-  }).then(function() {
-    form.classList.add('hidden');
-    document.getElementById('registration-success').classList.remove('hidden');
-  }).catch(function() {
-    form.classList.add('hidden');
-    document.getElementById('registration-success').classList.remove('hidden');
+    const roundTableChecked = document.querySelector('input[name="role"][value="round_table"]').checked;
+    if (roundTableChecked) {
+      const checked = document.querySelectorAll('#topics-section input[type="checkbox"]:checked');
+      if (checked.length === 0) {
+        alert('Please select at least one round table topic.');
+        return;
+      }
+    }
+
+    var button = form.querySelector('button[type="submit"]');
+    button.disabled = true;
+    button.textContent = 'Submitting...';
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      mode: 'no-cors',
+    }).then(function() {
+      form.classList.add('hidden');
+      document.getElementById('registration-success').classList.remove('hidden');
+    }).catch(function() {
+      form.classList.add('hidden');
+      document.getElementById('registration-success').classList.remove('hidden');
+    });
   });
-});
+})();
 </script>
