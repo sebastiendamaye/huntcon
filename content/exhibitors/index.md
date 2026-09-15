@@ -69,6 +69,12 @@ This is not a sales floor — exhibitors are selected for their relevance to the
   </div>
   <p class="font-semibold text-lg" style="margin:0;">CrowdStrike</p>
 </a>
+<a href="https://cloud.google.com/security?hl=en&gclsrc=aw.ds&gad_source=1&gad_campaignid=23615466905&gclid=CjwKCAjw2aPVBhBkEiwA0Cptt6wiXE-tlEA5vO2t35T3zZ7JEzffmZBBqnKLcPp7cbdFO7cmIjjLWhoCt58QAvD_BwE" target="_blank" rel="noopener noreferrer" class="border border-neutral-700 rounded-lg block hover:border-neutral-500 transition-colors text-center" style="flex:1 1 260px; max-width:300px; min-width:220px; min-height:160px; padding:0.5rem; display:flex; flex-direction:column; justify-content:space-between; align-items:center;">
+  <div style="flex:1; display:flex; align-items:center; justify-content:center; width:100%;">
+    <img src="/images/exhibitors/google.png" alt="Google Cloud Security" style="width:auto; height:auto; max-height:100px; max-width:220px;" class="object-contain nozoom">
+  </div>
+  <p class="font-semibold text-lg" style="margin:0;">Google Cloud Security</p>
+</a>
 </div>
 
 ---
