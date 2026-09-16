@@ -194,4 +194,4 @@ The La Défense business district offers numerous hotels within walking distance
 
 ---
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.5!2d2.2352!3d48.8922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e664dfdd0!2sLa+D%C3%A9fense!5e0!3m2!1sen!2sfr!4v1" width="100%" height="350" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5246.354962817186!2d2.232071895232402!3d48.89295466272374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e664f83770065b%3A0x3cc51258627f49f8!2s1884%20Bd%20de%20la%20D%C3%A9fense%2C%2092000%20Nanterre!5e0!3m2!1sen!2sfr!4v1789557721554!5m2!1sen!2sfr" width="100%" height="450" style="border:0;border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
