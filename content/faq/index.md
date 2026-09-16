@@ -35,7 +35,7 @@ Threat hunting practitioners, SOC/CSIRT team members, detection engineers, cyber
 ## Language
 
 **What language are the talks in?**
-Presentations are a mix of English and French. English is strongly encouraged, but French talks are accepted since many attendees are French-speaking.
+All presentations are in English to accommodate attendees from across Europe.
 
 **What about the round tables?**
 All round tables are held in English to accommodate participants from across Europe.

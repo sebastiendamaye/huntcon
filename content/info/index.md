@@ -16,7 +16,7 @@ While there are hundreds of renowned cybersecurity conferences worldwide — suc
 
 The event is designed for up to **110 attendees** representing major companies, cybersecurity vendors, consulting firms, and industry experts.
 
-The conference and presentations are a mix of **English and French** to accommodate attendees from across all Europe. Round tables will all be held in **English**.
+The conference and presentations are all held in **English** to accommodate attendees from across all Europe. Round tables will all be held in **English**.
 
 ---
 
