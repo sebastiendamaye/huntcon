@@ -46,7 +46,7 @@ Food (buffet) and coffee breaks will be provided throughout the event.
 
 ### Day 1 — Conference Sessions
 
-Keynote presentations, technical talks, case studies, demonstrations, and experience-sharing sessions delivered by threat hunting teams, industry experts, and technology partners. Each talk is a 1-hour slot, including 10 minutes for Q&A. Presentation slides will be published on the website after the event (unless the speaker explicitly requests otherwise). Interested in presenting? [Submit a talk](/cfp/).
+Keynote presentations, technical talks, case studies, demonstrations, and experience-sharing sessions delivered by threat hunting teams, industry experts, and technology partners. Talks come in two formats: a 30-minute slot (including 5 minutes for Q&A) or a 1-hour slot (including 10 minutes for Q&A). Presentation slides will be published on the website after the event (unless the speaker explicitly requests otherwise). Interested in presenting? [Submit a talk](/cfp/).
 
 | Time | Session |
 |------|---------|

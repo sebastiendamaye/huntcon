@@ -45,7 +45,7 @@ All round tables are held in English to accommodate participants from across Eur
 ## Talks & Round Tables
 
 **How long are the talks?**
-Each talk is a 1-hour slot, including 10 minutes for Q&A.
+Talks come in two formats: a 30-minute slot (including 5 minutes for Q&A) or a 1-hour slot (including 10 minutes for Q&A). Speakers choose their preferred format when submitting.
 
 **How do the round tables work?**
 Each round table is a 45-minute session led by an animator with prepared questions. During registration, you select the topics you'd like to contribute to. For each topic, 5 candidates are chosen from the registrants to go on stage and share insights with the audience.

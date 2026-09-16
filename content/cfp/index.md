@@ -7,7 +7,7 @@ layout: "simple"
 - We invite security professionals, researchers, and practitioners to submit presentations on threat hunting topics.
 - We welcome speakers from any country. However, as the conference is entirely free, we are unable to cover travel or accommodation expenses for speakers. All speakers are responsible for their own travel arrangements.
 - **Presentations must be in English**, as we welcome attendees from across Europe.
-- Each talk is allocated a **1-hour slot**, including 10 minutes for questions.
+- Talks can be submitted in one of two formats: a **30-minute slot** (including 5 minutes for questions) or a **1-hour slot** (including 10 minutes for questions). Choose the format that best fits your topic.
 - Only PDF format is accepted for the presentation upload.
 - Please wait until the confirmation message appears before leaving the page to ensure your submission is processed correctly.
 - All submissions will be reviewed by a panel of experienced threat hunting practitioners on 1 December 2026. You will be notified of the outcome in the days that follow.
@@ -71,6 +71,15 @@ layout: "simple"
         class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
     </div>
   </fieldset>
+
+  <div>
+    <label for="format" class="block text-sm font-medium mb-1">Talk Format <span class="text-red-400">*</span></label>
+    <select id="format" name="format" required
+      class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none">
+      <option value="30 minutes">30 minutes (including 5 min Q&A)</option>
+      <option value="1 hour" selected>1 hour (including 10 min Q&A)</option>
+    </select>
+  </div>
 
   <div>
     <label for="title" class="block text-sm font-medium mb-1">Presentation Title <span class="text-red-400">*</span></label>
@@ -143,6 +152,7 @@ document.getElementById('cfp-form').addEventListener('submit', function(e) {
     formData.append('secondary_first_name', form.querySelector('[name="secondary_first_name"]').value);
     formData.append('secondary_last_name', form.querySelector('[name="secondary_last_name"]').value);
     formData.append('secondary_email', form.querySelector('[name="secondary_email"]').value);
+    formData.append('format', form.querySelector('[name="format"]').value);
     formData.append('presentation_title', form.querySelector('[name="presentation_title"]').value);
     formData.append('presentation_description', form.querySelector('[name="presentation_description"]').value);
     formData.append('file_base64', base64);
