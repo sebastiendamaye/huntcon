@@ -51,16 +51,17 @@ Keynote presentations, technical talks, case studies, demonstrations, and experi
 | Time | Session |
 |------|---------|
 | 08:30 - 09:00 | Opening Remarks |
-| 09:00 - 10:00 | Talk #1 |
+| 09:00 - 10:00 | Conference Talks |
 | 10:00 - 10:30 | ☕ Coffee Break |
-| 10:30 - 11:30 | Talk #2 |
-| 11:30 - 12:30 | Talk #3 |
+| 10:30 - 12:30 | Conference Talks |
 | 12:30 - 14:00 | 🍴 Lunch |
-| 14:00 - 15:00 | Talk #4 |
+| 14:00 - 15:00 | Conference Talks |
 | 15:00 - 15:30 | ☕ Coffee Break |
-| 15:30 - 16:30 | Talk #5 |
+| 15:30 - 16:30 | Conference Talks |
 | 16:30 - 18:00 | [Exhibitor Booth Demos](/exhibitors/) |
 | 18:00 - 19:00 | Networking |
+
+*Each talk block holds either one 1-hour talk or two 30-minute talks. The final lineup and exact timings will be published once the selection board has chosen the talks.*
 
 ### Day 2 — Round Tables
 
