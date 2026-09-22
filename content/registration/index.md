@@ -56,13 +56,13 @@ layout: "simple"
     <div class="space-y-2">
       <label class="flex items-center gap-2 cursor-pointer">
         <input type="checkbox" name="role" value="speaker"
-          class="form-checkbox" onchange="toggleRoles()" />
+          class="form-checkbox" />
         <span>Speaker</span>
       </label>
       <p id="speaker-note" class="hidden text-sm text-neutral-400 ml-6">(Please also use the <a href="../cfp/" class="text-cyan-400 hover:underline">Call for Papers</a> form to submit your presentation)</p>
       <label class="flex items-center gap-2 cursor-pointer">
         <input type="checkbox" name="role" value="round_table"
-          class="form-checkbox" onchange="toggleRoles()" />
+          class="form-checkbox" />
         <span>Participant to a Round Table</span>
       </label>
       <div id="topics-section" class="hidden border border-neutral-700 rounded-lg p-4 ml-6">
@@ -174,6 +174,10 @@ layout: "simple"
       speakerNote.classList.add('hidden');
     }
   }
+
+  document.querySelectorAll('input[name="role"][value="speaker"], input[name="role"][value="round_table"]')
+    .forEach(cb => cb.addEventListener('change', toggleRoles));
+  toggleRoles();
 
   document.getElementById('registration-form').addEventListener('submit', function(e) {
     e.preventDefault();
