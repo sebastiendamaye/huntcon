@@ -10,9 +10,9 @@ layout: "simple"
 
 ## About HUNTCON
 
-While there are hundreds of renowned cybersecurity conferences worldwide — such as DEF CON, Black Hat, RSA Conference, BruCON, GreHack, and Hack.lu — very few events are dedicated exclusively to **Threat Hunting**. The few that exist are primarily online and US-based. To our knowledge, there is currently no dedicated Threat Hunting conference in France.
+While there are hundreds of renowned cybersecurity conferences worldwide — such as DEF CON, Black Hat, RSA Conference, BruCON, GreHack, and Hack.lu — very few events are dedicated exclusively to **Threat Hunting**. The few that exist are primarily online and US-based. To our knowledge, there is currently no dedicated Threat Hunting conference in Europe.
 
-**HUNTCON 2027** aims to fill that gap by bringing together threat hunting practitioners, cybersecurity leaders, researchers, and experts from across Europe for a two-day, in-person event. This is a first-of-its-kind conference in France dedicated exclusively to the discipline of Threat Hunting.
+**HUNTCON 2027** aims to fill that gap by bringing together threat hunting practitioners, cybersecurity leaders, researchers, and experts from across Europe for a two-day, in-person event. This is a first-of-its-kind conference in Europe dedicated exclusively to the discipline of Threat Hunting.
 
 The event is designed for up to **110 attendees** representing major companies, cybersecurity vendors, consulting firms, and industry experts.
 
