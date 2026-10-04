@@ -5,7 +5,7 @@ layout: "simple"
 ---
 
 <div class="flex justify-center mb-0">
-  <img src="../images/mountain.png" alt="Mountain" class="w-full max-w-3xl h-auto rounded-lg" />
+  <img src="../images/huntcon_logos/white_mountain.png" alt="Mountain" class="w-full max-w-3xl h-auto rounded-lg" />
 </div>
 
 ## About HUNTCON
