@@ -45,6 +45,14 @@ Have questions about HUNTCON 2027? Reach out to us using the form below.
     <input type="text" id="contact-website" name="website" tabindex="-1" autocomplete="off" />
   </div>
 
+  <div class="flex gap-2 border-t border-neutral-700 pt-4">
+    <input type="checkbox" id="contact-gdpr-consent" name="gdpr_consent" value="yes" required
+      class="form-checkbox mt-1 shrink-0 cursor-pointer" />
+    <label for="contact-gdpr-consent" class="text-sm cursor-pointer">
+      I agree that HUNTCON may store and process the information provided in this form (name, email address, subject and message) to answer my message. See our <a href="/privacy/" target="_blank" class="text-cyan-400 hover:underline">Privacy Notice</a>. <span class="text-red-400">*</span>
+    </label>
+  </div>
+
   <button type="submit"
     class="px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-semibold hover:opacity-90 transition-opacity cursor-pointer">
     Send Message
@@ -57,6 +65,8 @@ Have questions about HUNTCON 2027? Reach out to us using the form below.
 </div>
 
 <script>
+var PRIVACY_NOTICE_VERSION = 'privacy_v1';
+
 document.getElementById('contact-form').addEventListener('submit', function(e) {
   e.preventDefault();
   var form = this;
@@ -64,9 +74,13 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
   button.disabled = true;
   button.textContent = 'Sending...';
 
+  var formData = new FormData(form);
+  formData.append('consent_timestamp', new Date().toISOString());
+  formData.append('privacy_notice_version', PRIVACY_NOTICE_VERSION);
+
   fetch(form.action, {
     method: 'POST',
-    body: new FormData(form),
+    body: formData,
     mode: 'no-cors',
   }).then(function() {
     form.classList.add('hidden');
