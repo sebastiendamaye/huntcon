@@ -26,11 +26,12 @@ DTSTAMP:20260808T000000Z
 DTSTART;TZID=Europe/Paris:20270304T083000
 DTEND;TZID=Europe/Paris:20270305T173000
 SUMMARY:HUNTCON 2027 — European Threat Hunting Conference
-LOCATION:EDENN\, 1884 Boulevard de La Défense\, 92000 Nanterre\, France
+LOCATION:SENSE (formerly EDENN)\, 1884 Boulevard de La Défense\, 92000 Nan
+ terre\, France
 URL:https://huntcon.fr/
-DESCRIPTION:The first European conference dedicated exclusively to Threat Hunting. A two
- -day\, in-person event at EDENN (Schneider Electric HQ)\, La Défense\, Pari
- s. Day 1: conference sessions. Day 2: round tables. Registration is mandato
- ry — https://huntcon.fr/registration/
+DESCRIPTION:The first European conference dedicated exclusively to Threat H
+ unting. A two-day\, in-person event at SENSE (formerly EDENN\, Schneider E
+ lectric HQ)\, La Défense\, Paris. Day 1: conference sessions. Day 2: roun
+ d tables. Registration is mandatory — https://huntcon.fr/registration/
 END:VEVENT
 END:VCALENDAR

@@ -147,7 +147,7 @@ Discussion points:
 
 ## Venue
 
-**HUNTCON 2027** takes place at **EDENN**, the new Schneider Electric headquarters.
+**HUNTCON 2027** takes place at **SENSE** (formerly known as EDENN), the new Schneider Electric headquarters.
 
 **Address:**  
 1884 Boulevard de La Défense  
