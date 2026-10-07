@@ -101,6 +101,23 @@ layout: "simple"
     <p class="text-xs text-neutral-500 mt-1">Only PDF format is accepted (max 5MB)</p>
   </div>
 
+  <div class="space-y-6 border-t border-neutral-700 pt-4">
+    <div class="flex gap-2">
+      <input type="checkbox" id="gdpr-consent" name="gdpr_consent" value="yes" required
+        class="form-checkbox mt-1 shrink-0 cursor-pointer" />
+      <label for="gdpr-consent" class="text-sm cursor-pointer">
+        I agree that HUNTCON may store and process the information provided in this form (names, email addresses, company and presentation) to review my proposal and contact me about it. If my talk is accepted, my name, presentation title and description may be published on the HUNTCON website. See our <a href="/privacy/" target="_blank" class="text-cyan-400 hover:underline">Privacy Notice</a>. <span class="text-red-400">*</span>
+      </label>
+    </div>
+    <div id="secondary-consent-wrapper" class="hidden gap-2">
+      <input type="checkbox" id="secondary-consent" name="secondary_consent" value="yes"
+        class="form-checkbox mt-1 shrink-0 cursor-pointer" />
+      <label for="secondary-consent" class="text-sm cursor-pointer">
+        I confirm that the secondary speaker has agreed to share their personal information for this submission and has been informed of the <a href="/privacy/" target="_blank" class="text-cyan-400 hover:underline">Privacy Notice</a>. <span class="text-red-400">*</span>
+      </label>
+    </div>
+  </div>
+
   <button type="submit"
     class="px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-semibold hover:opacity-90 transition-opacity cursor-pointer">
     Submit Proposal
@@ -113,6 +130,24 @@ layout: "simple"
 </div>
 
 <script>
+var PRIVACY_NOTICE_VERSION = 'privacy_v1';
+
+var secondaryFields = ['secondary-first', 'secondary-last', 'secondary-email'];
+function updateSecondaryConsent() {
+  var hasSecondary = secondaryFields.some(function(id) {
+    return document.getElementById(id).value.trim() !== '';
+  });
+  var wrapper = document.getElementById('secondary-consent-wrapper');
+  var checkbox = document.getElementById('secondary-consent');
+  wrapper.classList.toggle('hidden', !hasSecondary);
+  wrapper.classList.toggle('flex', hasSecondary);
+  checkbox.required = hasSecondary;
+  if (!hasSecondary) checkbox.checked = false;
+}
+secondaryFields.forEach(function(id) {
+  document.getElementById(id).addEventListener('input', updateSecondaryConsent);
+});
+
 document.getElementById('upload').addEventListener('change', function(e) {
   var file = e.target.files[0];
   if (file && file.type !== 'application/pdf') {
@@ -157,6 +192,10 @@ document.getElementById('cfp-form').addEventListener('submit', function(e) {
     formData.append('presentation_description', form.querySelector('[name="presentation_description"]').value);
     formData.append('file_base64', base64);
     formData.append('file_name', file.name);
+    formData.append('gdpr_consent', document.getElementById('gdpr-consent').checked ? 'yes' : 'no');
+    formData.append('secondary_consent', document.getElementById('secondary-consent').checked ? 'yes' : 'n/a');
+    formData.append('consent_timestamp', new Date().toISOString());
+    formData.append('privacy_notice_version', PRIVACY_NOTICE_VERSION);
 
     fetch('https://script.google.com/macros/s/AKfycbwCnc_ylZHqrGm4aePJlPvHwdHYRcg4Xv3EFKXNRmWD27y0JnDykFDzsgbQtPBxA6DgVg/exec', {
       method: 'POST',

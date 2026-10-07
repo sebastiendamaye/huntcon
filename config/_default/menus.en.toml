@@ -51,3 +51,8 @@
   [footer.params]
     target = "_blank"
     rel = "noopener noreferrer"
+
+[[footer]]
+  name = "Privacy Notice"
+  pageRef = "/privacy/"
+  weight = 20

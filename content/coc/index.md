@@ -46,7 +46,7 @@ HUNTCON values both community sharing and individual privacy. The following rule
 - **Individual photos** of other attendees require their informal consent.
 - If someone objects to a photo, it must be deleted immediately.
 - **Publication:** Photos and videos taken during the event may be used for internal and external communications (social media, website, newsletters, press). All publications will respect the rules above — individuals wearing "No Photo" stickers will be excluded from any published material.
-- **Talk recordings:** The organization may record conference sessions, focusing on the speaker and slides. Speakers will be informed in advance. Attendees who do not wish to appear on camera should avoid the front rows.
+- **Talk recordings:** Conference sessions are not recorded or streamed.
 - **Private spaces** (restrooms, etc.) must never be photographed or filmed.
 
 ---
