@@ -104,6 +104,14 @@ layout: "simple"
     </div>
   </div>
 
+  <div class="flex gap-2 border-t border-neutral-700 pt-4">
+    <input type="checkbox" id="reg-gdpr-consent" name="gdpr_consent" value="yes" required
+      class="form-checkbox mt-1 shrink-0 cursor-pointer" />
+    <label for="reg-gdpr-consent" class="text-sm cursor-pointer">
+      I agree that HUNTCON may store and process the information provided in this form (name, email address, company, roles and round table topics) to manage my registration, issue my personal entry QR code and send me practical information about the event. See our <a href="/privacy/" target="_blank" class="text-cyan-400 hover:underline">Privacy Notice</a>. <span class="text-red-400">*</span>
+    </label>
+  </div>
+
   <button type="submit"
     class="px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-semibold hover:opacity-90 transition-opacity cursor-pointer">
     Register
@@ -118,6 +126,7 @@ layout: "simple"
 <script>
 (function() {
   const REGISTRATION_CAPACITY = 130;
+  const PRIVACY_NOTICE_VERSION = 'privacy_v1';
   const STATS_URL = 'https://script.google.com/macros/s/AKfycbyJ2nz-woupO7Y07qzJvbUyWgjN5PxiTmbw4unMlhpZhHKn5qmlYrgqJ8KhBU4s6vigBg/exec';
   const form = document.getElementById('registration-form');
   const closedMessage = document.getElementById('registration-closed');
@@ -196,9 +205,13 @@ layout: "simple"
     button.disabled = true;
     button.textContent = 'Submitting...';
 
+    var formData = new FormData(form);
+    formData.append('consent_timestamp', new Date().toISOString());
+    formData.append('privacy_notice_version', PRIVACY_NOTICE_VERSION);
+
     fetch(form.action, {
       method: 'POST',
-      body: new FormData(form),
+      body: formData,
       mode: 'no-cors',
     }).then(function() {
       form.classList.add('hidden');
