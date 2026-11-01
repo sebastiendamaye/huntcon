@@ -4,3 +4,6 @@
 
 [cfp]
 open = false
+
+[registration]
+open = false

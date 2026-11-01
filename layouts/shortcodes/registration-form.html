@@ -1,0 +1,176 @@
+{{- /* Registration form, rendered only when registration is open (data/forms.toml). */ -}}
+{{- if hugo.Data.forms.registration.open | default false -}}
+<form id="registration-form" action="https://script.google.com/macros/s/AKfycbyJ2nz-woupO7Y07qzJvbUyWgjN5PxiTmbw4unMlhpZhHKn5qmlYrgqJ8KhBU4s6vigBg/exec" method="POST" class="mt-8 space-y-6 max-w-2xl">
+
+  <div>
+    <label for="reg-company" class="block text-sm font-medium mb-1">Company <span class="text-red-400">*</span></label>
+    <input type="text" id="reg-company" name="company" required
+      class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div>
+      <label for="reg-first" class="block text-sm font-medium mb-1">First Name <span class="text-red-400">*</span></label>
+      <input type="text" id="reg-first" name="first_name" required
+        class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
+    </div>
+    <div>
+      <label for="reg-last" class="block text-sm font-medium mb-1">Last Name <span class="text-red-400">*</span></label>
+      <input type="text" id="reg-last" name="last_name" required
+        class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
+    </div>
+  </div>
+
+  <div>
+    <label for="reg-email" class="block text-sm font-medium mb-1">Email <span class="text-red-400">*</span></label>
+    <input type="email" id="reg-email" name="email" required
+      class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
+  </div>
+
+  <!-- Honeypot: hidden from humans, bots tend to fill it. Server-side check rejects any submission where this is non-empty. -->
+  <div aria-hidden="true" style="position:absolute; left:-9999px; top:-9999px;">
+    <label for="reg-website">Website</label>
+    <input type="text" id="reg-website" name="website" tabindex="-1" autocomplete="off" />
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium mb-2">Want to actively contribute or exhibit? (optional)</label>
+    <div class="space-y-2">
+      <label class="flex items-center gap-2 cursor-pointer">
+        <input type="checkbox" name="role" value="speaker"
+          class="form-checkbox" />
+        <span>Speaker</span>
+      </label>
+      {{- if hugo.Data.forms.cfp.open | default false }}
+      <p id="speaker-note" class="hidden text-sm text-neutral-400 ml-6">(Please also use the <a href="../cfp/" class="text-cyan-400 hover:underline">Call for Papers</a> form to submit your presentation)</p>
+      {{- end }}
+      <label class="flex items-center gap-2 cursor-pointer">
+        <input type="checkbox" name="role" value="round_table"
+          class="form-checkbox" />
+        <span>Participant to a Round Table</span>
+      </label>
+      <div id="topics-section" class="hidden border border-neutral-700 rounded-lg p-4 ml-6">
+        <label class="block text-sm font-medium mb-2">Round Table Topics <span class="text-red-400">*</span> <span class="text-xs text-neutral-500">(select at least one)</span></label>
+        <p class="text-sm text-neutral-400 mb-3">See the <a href="../info/#round-table-topics" class="text-cyan-400 hover:underline">Info page</a> for details on each topic.</p>
+        <div class="space-y-2">
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" name="topics" value="threat_hunting_frameworks"
+              class="form-checkbox" />
+            <span>Threat Hunting Frameworks & Maturity Models</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" name="topics" value="ai_agentic_threat_hunting"
+              class="form-checkbox" />
+            <span>AI & Agentic Threat Hunting</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" name="topics" value="telemetry_data_quality"
+              class="form-checkbox" />
+            <span>Telemetry Strategy & Data Quality</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" name="topics" value="measuring_hunting_value"
+              class="form-checkbox" />
+            <span>Measuring Threat Hunting Value</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" name="topics" value="building_scaling_team"
+              class="form-checkbox" />
+            <span>Building and Scaling a Hunting Team</span>
+          </label>
+        </div>
+      </div>
+      <label class="flex items-center gap-2 cursor-pointer">
+        <input type="checkbox" name="role" value="exhibitor"
+          class="form-checkbox" />
+        <span>Exhibitor</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="flex gap-2 border-t border-neutral-700 pt-4">
+    <input type="checkbox" id="reg-gdpr-consent" name="gdpr_consent" value="yes" required
+      class="form-checkbox mt-1 shrink-0 cursor-pointer" />
+    <label for="reg-gdpr-consent" class="text-sm cursor-pointer">
+      I agree that HUNTCON may store and process the information provided in this form (name, email address, company, roles and round table topics) to manage my registration, issue my personal entry QR code and send me practical information about the event. See our <a href="/privacy/" target="_blank" class="text-cyan-400 hover:underline">Privacy Notice</a>. <span class="text-red-400">*</span>
+    </label>
+  </div>
+
+  <button type="submit"
+    class="px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-semibold hover:opacity-90 transition-opacity cursor-pointer">
+    Register
+  </button>
+</form>
+
+<div id="registration-success" class="hidden mt-8 p-6 rounded-lg border border-green-500/50 bg-green-500/10 max-w-2xl">
+  <p class="text-green-400 font-semibold text-lg">Registration confirmed!</p>
+  <p class="text-neutral-300 mt-2">Thank you for registering. We look forward to seeing you at HUNTCON 2027.</p>
+</div>
+
+<script>
+(function() {
+  const PRIVACY_NOTICE_VERSION = 'privacy_v1';
+
+  function toggleRoles() {
+    const speakerChecked = document.querySelector('input[name="role"][value="speaker"]').checked;
+    const roundTableChecked = document.querySelector('input[name="role"][value="round_table"]').checked;
+    const topicsSection = document.getElementById('topics-section');
+    const topicCheckboxes = topicsSection.querySelectorAll('input[type="checkbox"]');
+
+    if (roundTableChecked) {
+      topicsSection.classList.remove('hidden');
+      topicCheckboxes.forEach(cb => cb.removeAttribute('disabled'));
+    } else {
+      topicsSection.classList.add('hidden');
+      topicCheckboxes.forEach(cb => {
+        cb.checked = false;
+        cb.setAttribute('disabled', 'disabled');
+      });
+    }
+
+    const speakerNote = document.getElementById('speaker-note');
+    if (speakerNote) {
+      speakerNote.classList.toggle('hidden', !speakerChecked);
+    }
+  }
+
+  document.querySelectorAll('input[name="role"][value="speaker"], input[name="role"][value="round_table"]')
+    .forEach(cb => cb.addEventListener('change', toggleRoles));
+  toggleRoles();
+
+  document.getElementById('registration-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var form = this;
+
+    const roundTableChecked = document.querySelector('input[name="role"][value="round_table"]').checked;
+    if (roundTableChecked) {
+      const checked = document.querySelectorAll('#topics-section input[type="checkbox"]:checked');
+      if (checked.length === 0) {
+        alert('Please select at least one round table topic.');
+        return;
+      }
+    }
+
+    var button = form.querySelector('button[type="submit"]');
+    button.disabled = true;
+    button.textContent = 'Submitting...';
+
+    var formData = new FormData(form);
+    formData.append('consent_timestamp', new Date().toISOString());
+    formData.append('privacy_notice_version', PRIVACY_NOTICE_VERSION);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      mode: 'no-cors',
+    }).then(function() {
+      form.classList.add('hidden');
+      document.getElementById('registration-success').classList.remove('hidden');
+    }).catch(function() {
+      form.classList.add('hidden');
+      document.getElementById('registration-success').classList.remove('hidden');
+    });
+  });
+})();
+</script>
+{{- end -}}

@@ -1,4 +1,5 @@
-{{- /* Shows its content only when the form's status (data/forms.toml) matches: {{% form-state cfp open %}}...{{% /form-state %}} or {{% form-state cfp closed %}}...{{% /form-state %}} */ -}}
+{{- /* Shows its content only when the form's status (data/forms.toml) matches: {{< form-state cfp open >}}...{{< /form-state >}} or {{< form-state cfp closed >}}...{{< /form-state >}}.
+     The Markdown inside is rendered on its own, so a list in it never merges with a list next to the shortcode. */ -}}
 {{- $form := .Get 0 -}}
 {{- $state := .Get 1 -}}
 {{- $cfg := index hugo.Data.forms $form -}}
@@ -9,5 +10,5 @@
   {{- errorf "form-state shortcode: second argument must be \"open\" or \"closed\", got %q in %s" $state .Position -}}
 {{- end -}}
 {{- if eq ($cfg.open | default false) (eq $state "open") -}}
-{{ .Inner }}
+{{ .Inner | .Page.RenderString (dict "display" "block") }}
 {{- end -}}
