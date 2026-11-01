@@ -98,7 +98,7 @@ Submissions must be received by **1 November 2026 at midnight CET**.
 Submissions are reviewed by a panel of experienced threat hunting practitioners.
 
 **When will I know if my talk is accepted?**
-The selection board convenes on **1 December 2026**. All submitters will be notified of the outcome in the days that follow.
+The selection board reviews all proposals between the submission deadline and **1 December 2026**. All submitters will be notified of the outcome in the days that follow.
 
 ---
 

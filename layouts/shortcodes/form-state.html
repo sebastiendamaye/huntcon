@@ -1,0 +1,13 @@
+{{- /* Shows its content only when the form's status (data/forms.toml) matches: {{% form-state cfp open %}}...{{% /form-state %}} or {{% form-state cfp closed %}}...{{% /form-state %}} */ -}}
+{{- $form := .Get 0 -}}
+{{- $state := .Get 1 -}}
+{{- $cfg := index hugo.Data.forms $form -}}
+{{- if not $cfg -}}
+  {{- errorf "form-state shortcode: no [%s] section in data/forms.toml, in %s" $form .Position -}}
+{{- end -}}
+{{- if not (in (slice "open" "closed") $state) -}}
+  {{- errorf "form-state shortcode: second argument must be \"open\" or \"closed\", got %q in %s" $state .Position -}}
+{{- end -}}
+{{- if eq ($cfg.open | default false) (eq $state "open") -}}
+{{ .Inner }}
+{{- end -}}

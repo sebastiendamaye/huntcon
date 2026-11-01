@@ -4,13 +4,23 @@ description: "Submit your presentation for HUNTCON 2027"
 layout: "simple"
 ---
 
+{{% form-state cfp closed %}}
+<div class="p-6 rounded-lg border border-cyan-500/50 bg-cyan-500/10 max-w-2xl">
+  <p class="text-cyan-400 font-semibold text-lg mt-0">The Call for Papers is now closed</p>
+  <p class="text-neutral-300">Submissions closed on <strong>1 November 2026</strong>. Thank you to everyone who sent us a proposal! Over the coming month, the selection board will review every proposal and select the presentations by <strong>1 December 2026</strong>. All submitters will then be notified of the outcome in early December. The final program will be published on the <a href="/speakers/" class="text-cyan-400 hover:underline">Speakers</a> page.</p>
+  <p class="text-neutral-300 mb-0">Have a question about your submission, or something else you'd like to discuss? The HUNTCON organization team is still happy to hear from you through the <a href="/contact/" class="text-cyan-400 hover:underline">contact form</a>.</p>
+</div>
+{{% /form-state %}}
+
+{{% form-state cfp open %}}
 - We invite security professionals, researchers, and practitioners to submit presentations on threat hunting topics.
 - We welcome speakers from any country. However, as the conference is entirely free, we are unable to cover travel or accommodation expenses for speakers. All speakers are responsible for their own travel arrangements.
 - **Presentations must be in English**, as we welcome attendees from across Europe.
 - Talks can be submitted in one of two formats: a **30-minute slot** (including 5 minutes for questions) or a **1-hour slot** (including 10 minutes for questions). Choose the format that best fits your topic.
 - Only PDF format is accepted for the presentation upload.
 - Please wait until the confirmation message appears before leaving the page to ensure your submission is processed correctly.
-- All submissions will be reviewed by a panel of experienced threat hunting practitioners on 1 December 2026. You will be notified of the outcome in the days that follow.
+- After the deadline, a panel of experienced threat hunting practitioners will review all submissions until 1 December 2026. You will be notified of the outcome in the days that follow.
+{{% /form-state %}}
 
 ---
 
@@ -19,196 +29,7 @@ layout: "simple"
 | When | Milestone |
 |------|-----------|
 | **1 November 2026** (midnight CET) | CFP Submission Deadline — all proposals must be submitted by this date |
-| **1 December 2026** | Speaker Selection Board — the conference board reviews and selects presentations |
+| **1 November – 1 December 2026** | Review Period — the selection board reviews all proposals and selects the presentations |
 | **Early December 2026** | Notification to Speakers — all submitters will be notified of the outcome |
 
-<form id="cfp-form" class="mt-8 space-y-6 max-w-2xl">
-
-  <div>
-    <label for="company" class="block text-sm font-medium mb-1">Company <span class="text-red-400">*</span></label>
-    <input type="text" id="company" name="company" required
-      class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
-  </div>
-
-  <fieldset class="border border-neutral-700 rounded-lg p-4">
-    <legend class="text-sm font-semibold px-2">Primary Speaker <span class="text-red-400">*</span></legend>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-      <div>
-        <label for="primary-first" class="block text-sm font-medium mb-1">First Name <span class="text-red-400">*</span></label>
-        <input type="text" id="primary-first" name="primary_first_name" required
-          class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
-      </div>
-      <div>
-        <label for="primary-last" class="block text-sm font-medium mb-1">Last Name <span class="text-red-400">*</span></label>
-        <input type="text" id="primary-last" name="primary_last_name" required
-          class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
-      </div>
-    </div>
-    <div class="mt-4">
-      <label for="primary-email" class="block text-sm font-medium mb-1">Email <span class="text-red-400">*</span></label>
-      <input type="email" id="primary-email" name="primary_email" required
-        class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
-    </div>
-  </fieldset>
-
-  <fieldset class="border border-neutral-700 rounded-lg p-4">
-    <legend class="text-sm font-semibold px-2">Secondary Speaker (Optional)</legend>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-      <div>
-        <label for="secondary-first" class="block text-sm font-medium mb-1">First Name</label>
-        <input type="text" id="secondary-first" name="secondary_first_name"
-          class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
-      </div>
-      <div>
-        <label for="secondary-last" class="block text-sm font-medium mb-1">Last Name</label>
-        <input type="text" id="secondary-last" name="secondary_last_name"
-          class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
-      </div>
-    </div>
-    <div class="mt-4">
-      <label for="secondary-email" class="block text-sm font-medium mb-1">Email</label>
-      <input type="email" id="secondary-email" name="secondary_email"
-        class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
-    </div>
-  </fieldset>
-
-  <div>
-    <label for="format" class="block text-sm font-medium mb-1">Talk Format <span class="text-red-400">*</span></label>
-    <select id="format" name="format" required
-      class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none">
-      <option value="30 minutes">30 minutes (including 5 min Q&A)</option>
-      <option value="1 hour" selected>1 hour (including 10 min Q&A)</option>
-    </select>
-  </div>
-
-  <div>
-    <label for="title" class="block text-sm font-medium mb-1">Presentation Title <span class="text-red-400">*</span></label>
-    <input type="text" id="title" name="presentation_title" required maxlength="100"
-      class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none" />
-    <p class="text-xs text-neutral-500 mt-1">Maximum 100 characters</p>
-  </div>
-
-  <div>
-    <label for="description" class="block text-sm font-medium mb-1">Presentation Description <span class="text-red-400">*</span></label>
-    <textarea id="description" name="presentation_description" required rows="6"
-      class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none"></textarea>
-  </div>
-
-  <div>
-    <label for="upload" class="block text-sm font-medium mb-1">Presentation Upload (PDF only) <span class="text-red-400">*</span></label>
-    <input type="file" id="upload" name="presentation_file" required accept=".pdf,application/pdf"
-      class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 text-neutral-100 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-cyan-600 file:text-white file:font-semibold file:cursor-pointer" />
-    <p class="text-xs text-neutral-500 mt-1">Only PDF format is accepted (max 5MB)</p>
-  </div>
-
-  <div class="space-y-6 border-t border-neutral-700 pt-4">
-    <div class="flex gap-2">
-      <input type="checkbox" id="gdpr-consent" name="gdpr_consent" value="yes" required
-        class="form-checkbox mt-1 shrink-0 cursor-pointer" />
-      <label for="gdpr-consent" class="text-sm cursor-pointer">
-        I agree that HUNTCON may store and process the information provided in this form (names, email addresses, company and presentation) to review my proposal and contact me about it. If my talk is accepted, my name, presentation title and description may be published on the HUNTCON website. See our <a href="/privacy/" target="_blank" class="text-cyan-400 hover:underline">Privacy Notice</a>. <span class="text-red-400">*</span>
-      </label>
-    </div>
-    <div id="secondary-consent-wrapper" class="hidden gap-2">
-      <input type="checkbox" id="secondary-consent" name="secondary_consent" value="yes"
-        class="form-checkbox mt-1 shrink-0 cursor-pointer" />
-      <label for="secondary-consent" class="text-sm cursor-pointer">
-        I confirm that the secondary speaker has agreed to share their personal information for this submission and has been informed of the <a href="/privacy/" target="_blank" class="text-cyan-400 hover:underline">Privacy Notice</a>. <span class="text-red-400">*</span>
-      </label>
-    </div>
-  </div>
-
-  <button type="submit"
-    class="px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-semibold hover:opacity-90 transition-opacity cursor-pointer">
-    Submit Proposal
-  </button>
-</form>
-
-<div id="cfp-success" class="hidden mt-8 p-6 rounded-lg border border-green-500/50 bg-green-500/10 max-w-2xl">
-  <p class="text-green-400 font-semibold text-lg">Proposal submitted!</p>
-  <p class="text-neutral-300 mt-2">Thank you for your submission. As a reminder, the submission deadline is <strong>1 November 2026</strong>. The selection board will convene on <strong>1 December 2026</strong>, and you will be notified of the outcome in the days that follow.</p>
-</div>
-
-<script>
-var PRIVACY_NOTICE_VERSION = 'privacy_v1';
-
-var secondaryFields = ['secondary-first', 'secondary-last', 'secondary-email'];
-function updateSecondaryConsent() {
-  var hasSecondary = secondaryFields.some(function(id) {
-    return document.getElementById(id).value.trim() !== '';
-  });
-  var wrapper = document.getElementById('secondary-consent-wrapper');
-  var checkbox = document.getElementById('secondary-consent');
-  wrapper.classList.toggle('hidden', !hasSecondary);
-  wrapper.classList.toggle('flex', hasSecondary);
-  checkbox.required = hasSecondary;
-  if (!hasSecondary) checkbox.checked = false;
-}
-secondaryFields.forEach(function(id) {
-  document.getElementById(id).addEventListener('input', updateSecondaryConsent);
-});
-
-document.getElementById('upload').addEventListener('change', function(e) {
-  var file = e.target.files[0];
-  if (file && file.type !== 'application/pdf') {
-    alert('Only PDF files are accepted.');
-    e.target.value = '';
-  }
-  if (file && file.size > 5 * 1024 * 1024) {
-    alert('File size must be under 5MB.');
-    e.target.value = '';
-  }
-});
-
-document.getElementById('cfp-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  var form = this;
-  var button = form.querySelector('button[type="submit"]');
-  var fileInput = document.getElementById('upload');
-  var file = fileInput.files[0];
-
-  if (!file) {
-    alert('Please upload a PDF file.');
-    return;
-  }
-
-  button.disabled = true;
-  button.textContent = 'Uploading...';
-
-  var reader = new FileReader();
-  reader.onload = function() {
-    var base64 = reader.result.split(',')[1];
-
-    var formData = new FormData();
-    formData.append('company', form.querySelector('[name="company"]').value);
-    formData.append('primary_first_name', form.querySelector('[name="primary_first_name"]').value);
-    formData.append('primary_last_name', form.querySelector('[name="primary_last_name"]').value);
-    formData.append('primary_email', form.querySelector('[name="primary_email"]').value);
-    formData.append('secondary_first_name', form.querySelector('[name="secondary_first_name"]').value);
-    formData.append('secondary_last_name', form.querySelector('[name="secondary_last_name"]').value);
-    formData.append('secondary_email', form.querySelector('[name="secondary_email"]').value);
-    formData.append('format', form.querySelector('[name="format"]').value);
-    formData.append('presentation_title', form.querySelector('[name="presentation_title"]').value);
-    formData.append('presentation_description', form.querySelector('[name="presentation_description"]').value);
-    formData.append('file_base64', base64);
-    formData.append('file_name', file.name);
-    formData.append('gdpr_consent', document.getElementById('gdpr-consent').checked ? 'yes' : 'no');
-    formData.append('secondary_consent', document.getElementById('secondary-consent').checked ? 'yes' : 'n/a');
-    formData.append('consent_timestamp', new Date().toISOString());
-    formData.append('privacy_notice_version', PRIVACY_NOTICE_VERSION);
-
-    fetch('https://script.google.com/macros/s/AKfycbwCnc_ylZHqrGm4aePJlPvHwdHYRcg4Xv3EFKXNRmWD27y0JnDykFDzsgbQtPBxA6DgVg/exec', {
-      method: 'POST',
-      body: formData,
-      mode: 'no-cors',
-    }).then(function() {
-      form.classList.add('hidden');
-      document.getElementById('cfp-success').classList.remove('hidden');
-    }).catch(function() {
-      form.classList.add('hidden');
-      document.getElementById('cfp-success').classList.remove('hidden');
-    });
-  };
-  reader.readAsDataURL(file);
-});
-</script>
+{{< cfp-form >}}

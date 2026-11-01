@@ -1,0 +1,6 @@
+# Open/closed status of the site's forms.
+# Set "open" to true to show a form (and its instructions) on its page,
+# false to show the "closed" notice instead.
+
+[cfp]
+open = false
